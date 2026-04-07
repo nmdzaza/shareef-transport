@@ -6,6 +6,8 @@ import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import StatePage from "./pages/StatePage";
 import MotorcycleShippingPage from "./pages/MotorcycleShippingPage";
+import EnclosedTransportPage from "./pages/EnclosedTransportPage";
+import OpenTransportPage from "./pages/OpenTransportPage";
 import ShippingCostPage from "./pages/blog/ShippingCostPage";
 import OpenVsEnclosedPage from "./pages/blog/OpenVsEnclosedPage";
 import PrepareCarPage from "./pages/blog/PrepareCarPage";
@@ -20,6 +22,8 @@ export default function App() {
         <Route path="/blog/open-vs-enclosed-car-transport" element={<OpenVsEnclosedPage />} />
         <Route path="/blog/5-tips-preparing-car-for-shipping" element={<PrepareCarPage />} />
         <Route path="/motorcycle-shipping" element={<MotorcycleShippingPage />} />
+        <Route path="/enclosed-auto-transport" element={<EnclosedTransportPage />} />
+        <Route path="/open-auto-transport" element={<OpenTransportPage />} />
         <Route path="/terms-and-conditions" element={<TermsPage />} />
         <Route path="/privacy-policy" element={<PrivacyPage />} />
         <Route path="/:stateSlug" element={<StatePage />} />

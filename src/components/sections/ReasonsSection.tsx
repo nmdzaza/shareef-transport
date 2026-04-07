@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Mail, MessageSquare, Phone, CheckCircle } from "lucide-react";
 
 export function ReasonsSection() {
@@ -187,19 +188,19 @@ export function ReasonsSection() {
                     <span className="box-border caret-transparent">
                       In just a few moments, our car transport calculator
                       assesses the price to ship a car. Choose
-                      <a
-                        href="#quote"
+                      <Link
+                        to="/enclosed-auto-transport"
                         className="text-blue-600 box-border caret-transparent"
                       >
                         enclosed transport
-                      </a>
+                      </Link>
                       or
-                      <a
-                        href="#quote"
+                      <Link
+                        to="/open-auto-transport"
                         className="text-blue-600 box-border caret-transparent"
                       >
                         open car shipping
-                      </a>
+                      </Link>
                       .
                     </span>
                   </div>
