@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Header } from "../components/layout/Header";
 import { Footer } from "../components/layout/Footer";
 
@@ -6,6 +7,7 @@ export interface BlogPost {
   id: string;
   title: string;
   href: string;
+  internalTo?: string;
   imageUrl: string;
   readTime: string;
   date: string;
@@ -103,6 +105,36 @@ const blogPosts: BlogPost[] = [
     date: "Jan 25, 2026",
     excerpt: "A complete guide to shipping multiple vehicles at once, including costs, transport options, and preparation tips from Shareef Transport experts.",
   },
+  {
+    id: "how-much-does-it-cost-to-ship-a-car",
+    title: "How Much Does It Cost to Ship a Car in 2026?",
+    href: "#/blog/how-much-does-it-cost-to-ship-a-car",
+    internalTo: "/blog/how-much-does-it-cost-to-ship-a-car",
+    imageUrl: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&h=340&fit=crop",
+    readTime: "8 MIN",
+    date: "Mar 15, 2026",
+    excerpt: "Distance, vehicle size, open vs. enclosed, fuel prices, and seasonal demand all affect your rate. Here's the full 2026 breakdown with real numbers.",
+  },
+  {
+    id: "open-vs-enclosed-car-transport",
+    title: "Open vs Enclosed Car Transport: Which Should You Choose?",
+    href: "#/blog/open-vs-enclosed-car-transport",
+    internalTo: "/blog/open-vs-enclosed-car-transport",
+    imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=340&fit=crop",
+    readTime: "7 MIN",
+    date: "Mar 10, 2026",
+    excerpt: "Open transport is cheaper and faster. Enclosed protects luxury and classic cars. Here's exactly when to use each and what the cost difference looks like.",
+  },
+  {
+    id: "5-tips-preparing-car-for-shipping",
+    title: "5 Tips for Preparing Your Car for Shipping",
+    href: "#/blog/5-tips-preparing-car-for-shipping",
+    internalTo: "/blog/5-tips-preparing-car-for-shipping",
+    imageUrl: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&h=340&fit=crop",
+    readTime: "6 MIN",
+    date: "Mar 5, 2026",
+    excerpt: "A clean car, ¼ tank of gas, photos from every angle — prep your vehicle the right way before the carrier arrives with this step-by-step checklist.",
+  },
 ];
 
 function BlogCard({ post, isFirst }: { post: BlogPost; isFirst: boolean }) {
@@ -110,25 +142,53 @@ function BlogCard({ post, isFirst }: { post: BlogPost; isFirst: boolean }) {
     ? "bg-gray-50 shadow-none box-border caret-transparent basis-full min-h-[auto] min-w-[auto] transform-none border border-zinc-200 rounded-md border-solid md:shadow-[rgba(3,15,37,0.08)_0px_6px_24px_0px] md:basis-[48%] md:translate-y-[-3px]"
     : "bg-gray-50 box-border caret-transparent basis-full min-h-[auto] min-w-[auto] border border-zinc-200 rounded-md border-solid md:basis-[48%]";
 
+  const ImageWrapper = post.internalTo
+    ? ({ children }: { children: React.ReactNode }) => (
+        <Link to={post.internalTo!} className="text-blue-600 box-border caret-transparent hover:text-sky-700">
+          {children}
+        </Link>
+      )
+    : ({ children }: { children: React.ReactNode }) => (
+        <a href={post.href} className="text-blue-600 box-border caret-transparent hover:text-sky-700">
+          {children}
+        </a>
+      );
+
+  const TitleWrapper = post.internalTo
+    ? ({ children }: { children: React.ReactNode }) => (
+        <Link to={post.internalTo!} className="text-blue-600 hover:text-sky-700">{children}</Link>
+      )
+    : ({ children }: { children: React.ReactNode }) => (
+        <a href={post.href} className="text-blue-600 hover:text-sky-700">{children}</a>
+      );
+
   return (
     <div className={cardClass}>
-      <a href={post.href} className="text-blue-600 box-border caret-transparent hover:text-sky-700">
+      <ImageWrapper>
         <div
           className="bg-no-repeat bg-cover h-[260px] bg-center rounded-t-md"
           style={{ backgroundImage: `url('${post.imageUrl}')` }}
         />
-      </a>
+      </ImageWrapper>
       <div className="box-border caret-transparent mt-4 pb-8 px-8">
         <div className="flex gap-4 text-slate-400 text-sm font-semibold uppercase mb-2">
           <span>{post.readTime}</span>
           <span>{post.date}</span>
         </div>
-        <a href={post.href} className="text-blue-600 hover:text-sky-700">
+        <TitleWrapper>
           <h2 className="text-blue-950 text-xl font-semibold leading-7 mb-2">{post.title}</h2>
-        </a>
-        <a href={post.href} className="text-blue-600 hover:text-sky-700">
+        </TitleWrapper>
+        <TitleWrapper>
           <p className="text-slate-400 leading-[22.4px]">{post.excerpt}</p>
-        </a>
+        </TitleWrapper>
+        {post.internalTo && (
+          <Link
+            to={post.internalTo}
+            className="inline-block mt-4 text-blue-600 font-semibold text-sm hover:text-sky-700"
+          >
+            Read More →
+          </Link>
+        )}
       </div>
     </div>
   );
