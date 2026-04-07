@@ -258,7 +258,7 @@ export function MobileNav() {
               </Link>
             </li>
             <li className="box-border caret-transparent mb-2">
-              <
+              <a
                 href="tel:6025550100"
                 className="text-lime-300 font-bold px-6 text-lg"
                 onClick={closeAll}
