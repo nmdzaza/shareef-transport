@@ -145,8 +145,9 @@ export function WhyChooseSection() {
               <div className="box-border caret-transparent flex flex-col justify-between py-[60px] md:flex-row">
                 <div className="box-border caret-transparent basis-full min-h-[auto] min-w-[auto] md:basis-[30%]">
                   <img
-                    alt="why image"
-                    className="box-border caret-transparent inline max-w-full rounded-[10px]"
+                    src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80"
+                    alt="Car dealership lot"
+                    className="box-border caret-transparent inline max-w-full rounded-[10px] object-cover w-full h-full"
                   />
                 </div>
                 <div className="box-border caret-transparent flex basis-full flex-col justify-between min-h-[auto] min-w-[auto] md:basis-[64%]">
@@ -195,7 +196,7 @@ export function WhyChooseSection() {
                   </div>
                   <div className="items-center box-border caret-transparent gap-x-4 flex min-h-[auto] min-w-[auto] gap-y-4 mt-4">
                     <a
-                      href="/contact/"
+                      href="#contact"
                       title="contact us"
                       className="text-white font-bold bg-blue-500 box-border caret-transparent block leading-[19px] min-h-[auto] min-w-[auto] text-center align-middle px-8 py-4 rounded-[30px]"
                     >

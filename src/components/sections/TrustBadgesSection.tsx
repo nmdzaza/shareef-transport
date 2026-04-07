@@ -11,18 +11,10 @@ export function TrustBadgesSection() {
                 <div className="box-border caret-transparent basis-auto min-h-[auto] min-w-[auto] pointer-events-none md:basis-[17%] md:pointer-events-auto">
                   <div className="items-center box-border caret-transparent gap-x-[30px] flex pointer-events-none gap-y-[30px] md:pointer-events-auto">
                     <div className="box-border caret-transparent min-h-[auto] min-w-[auto] pointer-events-none md:pointer-events-auto">
-                      <img
-                        src="/dot.svg"
-                        alt="dot logo"
-                        className="box-border caret-transparent inline grayscale-[1] max-h-16 max-w-full pointer-events-none md:pointer-events-auto"
-                      />
+                      <span className="text-white text-xs border border-white px-2 py-1 rounded">U.S. DOT</span>
                     </div>
                     <div className="box-border caret-transparent min-h-[auto] min-w-[auto] pointer-events-none md:pointer-events-auto">
-                      <img
-                        src="/fmcsa.svg"
-                        alt="fmcsa logo"
-                        className="box-border caret-transparent inline grayscale-[1] max-h-16 max-w-full pointer-events-none md:pointer-events-auto"
-                      />
+                      <span className="text-white text-xs border border-white px-2 py-1 rounded">FMCSA Licensed</span>
                     </div>
                   </div>
                 </div>
@@ -73,18 +65,10 @@ export function TrustBadgesSection() {
                 <div className="box-border caret-transparent basis-auto min-h-[auto] min-w-[auto] pointer-events-none md:basis-[17%] md:pointer-events-auto">
                   <div className="items-center box-border caret-transparent gap-x-[30px] flex pointer-events-none gap-y-[30px] md:pointer-events-auto">
                     <div className="box-border caret-transparent min-h-[auto] min-w-[auto] pointer-events-none md:pointer-events-auto">
-                      <img
-                        src="/dot.svg"
-                        alt="dot logo"
-                        className="box-border caret-transparent inline grayscale-[1] max-h-16 max-w-full pointer-events-none md:pointer-events-auto"
-                      />
+                      <span className="text-white text-xs border border-white px-2 py-1 rounded">U.S. DOT</span>
                     </div>
                     <div className="box-border caret-transparent min-h-[auto] min-w-[auto] pointer-events-none md:pointer-events-auto">
-                      <img
-                        src="/fmcsa.svg"
-                        alt="fmcsa logo"
-                        className="box-border caret-transparent inline grayscale-[1] max-h-16 max-w-full pointer-events-none md:pointer-events-auto"
-                      />
+                      <span className="text-white text-xs border border-white px-2 py-1 rounded">FMCSA Licensed</span>
                     </div>
                   </div>
                 </div>
@@ -92,11 +76,14 @@ export function TrustBadgesSection() {
                   <div className="box-border caret-transparent gap-x-5 flex justify-between pointer-events-none md:pointer-events-auto">
                     <div className="items-center box-border caret-transparent flex flex-col justify-between min-h-0 min-w-0 pointer-events-none w-36 md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
                       <div className="box-border caret-transparent min-h-0 min-w-0 pointer-events-none md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
-                        <img
-                          src="/google.svg"
-                          alt="google logo"
-                          className="box-border caret-transparent inline h-[30px] max-w-full pointer-events-none md:pointer-events-auto"
-                        />
+                        <div className="flex items-center gap-1 h-[30px]">
+                          <span className="font-bold" style={{color:'#4285F4'}}>G</span>
+                          <span className="font-bold" style={{color:'#EA4335'}}>o</span>
+                          <span className="font-bold" style={{color:'#FBBC05'}}>o</span>
+                          <span className="font-bold" style={{color:'#4285F4'}}>g</span>
+                          <span className="font-bold" style={{color:'#34A853'}}>l</span>
+                          <span className="font-bold" style={{color:'#EA4335'}}>e</span>
+                        </div>
                       </div>
                       <div className="box-border caret-transparent flex justify-between min-h-0 min-w-0 pointer-events-none w-full mt-0.5 md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
                         <p className="relative text-white text-[15px] font-bold box-border caret-transparent leading-[22.5px] min-h-0 min-w-0 pointer-events-none md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
@@ -109,11 +96,9 @@ export function TrustBadgesSection() {
                     </div>
                     <div className="items-center box-border caret-transparent flex flex-col justify-between min-h-0 min-w-0 pointer-events-none w-36 md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
                       <div className="box-border caret-transparent min-h-0 min-w-0 pointer-events-none md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
-                        <img
-                          src="/trustpilot.svg"
-                          alt="trustpilot logo"
-                          className="box-border caret-transparent inline h-[30px] max-w-full pointer-events-none md:pointer-events-auto"
-                        />
+                        <div className="h-[30px] flex items-center">
+                          <span className="text-green-500 font-bold text-lg">★ Trustpilot</span>
+                        </div>
                       </div>
                       <div className="box-border caret-transparent flex justify-between min-h-0 min-w-0 pointer-events-none w-full mt-0.5 md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
                         <p className="relative text-white text-[15px] font-bold box-border caret-transparent leading-[22.5px] min-h-0 min-w-0 pointer-events-none md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
@@ -126,11 +111,9 @@ export function TrustBadgesSection() {
                     </div>
                     <div className="items-center box-border caret-transparent flex flex-col justify-between min-h-0 min-w-0 pointer-events-none w-36 md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
                       <div className="box-border caret-transparent min-h-0 min-w-0 pointer-events-none md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
-                        <img
-                          src="/bbb.svg"
-                          alt="bbb logo"
-                          className="box-border caret-transparent inline h-[30px] max-w-full pointer-events-none md:pointer-events-auto"
-                        />
+                        <div className="h-[30px] flex items-center">
+                          <span className="text-blue-700 font-bold">BBB A+</span>
+                        </div>
                       </div>
                       <div className="box-border caret-transparent flex justify-between min-h-0 min-w-0 pointer-events-none w-full mt-0.5 md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
                         <p className="relative text-white text-[15px] font-bold box-border caret-transparent leading-[22.5px] min-h-0 min-w-0 pointer-events-none md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">

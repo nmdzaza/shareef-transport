@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, MessageSquare, Phone } from "lucide-react";
+import { Mail, MessageSquare, Phone, CheckCircle } from "lucide-react";
 
 export function ReasonsSection() {
   return (
@@ -156,11 +156,7 @@ export function ReasonsSection() {
             <div className="box-border caret-transparent mt-8">
               <div className="items-center box-border caret-transparent flex justify-between mb-5">
                 <div className="box-border caret-transparent basis-[60px] min-h-[auto] min-w-[auto]">
-                  <img
-                    alt="step-icon-1"
-                    src="/step-1.svg"
-                    className="box-border caret-transparent inline"
-                  />
+                  <div className="w-12 h-12 rounded-full bg-amber-500 text-white font-bold text-xl flex items-center justify-center">1</div>
                 </div>
                 <div className="box-border caret-transparent basis-[87%] min-h-[auto] min-w-[auto]">
                   <div className="text-black font-bold box-border caret-transparent leading-[23px]">
@@ -179,11 +175,7 @@ export function ReasonsSection() {
               </div>
               <div className="items-center box-border caret-transparent flex justify-between mb-5">
                 <div className="box-border caret-transparent basis-[60px] min-h-[auto] min-w-[auto]">
-                  <img
-                    alt="step-icon-2"
-                    src="/step-2.svg"
-                    className="box-border caret-transparent inline"
-                  />
+                  <div className="w-12 h-12 rounded-full bg-amber-500 text-white font-bold text-xl flex items-center justify-center">2</div>
                 </div>
                 <div className="box-border caret-transparent basis-[87%] min-h-[auto] min-w-[auto]">
                   <div className="text-black font-bold box-border caret-transparent leading-[23px]">
@@ -215,11 +207,7 @@ export function ReasonsSection() {
               </div>
               <div className="items-center box-border caret-transparent flex justify-between mb-5">
                 <div className="box-border caret-transparent basis-[60px] min-h-[auto] min-w-[auto]">
-                  <img
-                    alt="step-icon-3"
-                    src="/step-3.svg"
-                    className="box-border caret-transparent inline"
-                  />
+                  <div className="w-12 h-12 rounded-full bg-amber-500 text-white font-bold text-xl flex items-center justify-center">3</div>
                 </div>
                 <div className="box-border caret-transparent basis-[87%] min-h-[auto] min-w-[auto]">
                   <div className="text-black font-bold box-border caret-transparent leading-[23px]">
@@ -313,11 +301,8 @@ export function ReasonsSection() {
           </div>
         </div>
         <div className="items-center box-border caret-transparent flex flex-col-reverse flex-wrap justify-between mb-[30px] md:flex-row md:mb-[100px]">
-          <div className="box-border caret-transparent basis-[45%] min-h-[auto] min-w-[auto]">
-            <img
-              alt="step-2-asset"
-              className="box-border caret-transparent inline max-w-full"
-            />
+          <div className="box-border caret-transparent basis-[45%] min-h-[auto] min-w-[auto] flex items-center justify-center bg-slate-100 rounded-xl p-10">
+            <CheckCircle className="w-24 h-24 text-blue-300" />
           </div>
           <div className="box-border caret-transparent basis-[45%] min-h-[auto] min-w-[auto] w-full mt-[30px] md:w-auto md:mt-0">
             <div className="box-border caret-transparent mb-[18px]">
@@ -339,10 +324,7 @@ export function ReasonsSection() {
             <div className="box-border caret-transparent mt-8">
               <div className="items-center box-border caret-transparent flex justify-between mb-5">
                 <div className="box-border caret-transparent basis-[60px] min-h-[auto] min-w-[auto]">
-                  <img
-                    alt="step-icon-1"
-                    className="box-border caret-transparent inline"
-                  />
+                  <div className="w-12 h-12 rounded-full bg-lime-400 text-white font-bold text-xl flex items-center justify-center">1</div>
                 </div>
                 <div className="box-border caret-transparent basis-[87%] min-h-[auto] min-w-[auto]">
                   <div className="text-black font-bold box-border caret-transparent leading-[23px]">
@@ -360,10 +342,7 @@ export function ReasonsSection() {
               </div>
               <div className="items-center box-border caret-transparent flex justify-between mb-5">
                 <div className="box-border caret-transparent basis-[60px] min-h-[auto] min-w-[auto]">
-                  <img
-                    alt="step-icon-2"
-                    className="box-border caret-transparent inline"
-                  />
+                  <div className="w-12 h-12 rounded-full bg-lime-400 text-white font-bold text-xl flex items-center justify-center">2</div>
                 </div>
                 <div className="box-border caret-transparent basis-[87%] min-h-[auto] min-w-[auto]">
                   <div className="text-black font-bold box-border caret-transparent leading-[23px]">
@@ -381,10 +360,7 @@ export function ReasonsSection() {
               </div>
               <div className="items-center box-border caret-transparent flex justify-between mb-5">
                 <div className="box-border caret-transparent basis-[60px] min-h-[auto] min-w-[auto]">
-                  <img
-                    alt="step-icon-3"
-                    className="box-border caret-transparent inline"
-                  />
+                  <div className="w-12 h-12 rounded-full bg-lime-400 text-white font-bold text-xl flex items-center justify-center">3</div>
                 </div>
                 <div className="box-border caret-transparent basis-[87%] min-h-[auto] min-w-[auto]">
                   <div className="text-black font-bold box-border caret-transparent leading-[23px]">
@@ -424,10 +400,7 @@ export function ReasonsSection() {
             <div className="box-border caret-transparent mt-8">
               <div className="items-center box-border caret-transparent flex justify-between mb-5">
                 <div className="box-border caret-transparent basis-[60px] min-h-[auto] min-w-[auto]">
-                  <img
-                    alt="step-icon-4"
-                    className="box-border caret-transparent inline"
-                  />
+                  <div className="w-12 h-12 rounded-full bg-emerald-400 text-white font-bold text-xl flex items-center justify-center">1</div>
                 </div>
                 <div className="box-border caret-transparent basis-[87%] min-h-[auto] min-w-[auto]">
                   <div className="text-black font-bold box-border caret-transparent leading-[23px]">
@@ -445,10 +418,7 @@ export function ReasonsSection() {
               </div>
               <div className="items-center box-border caret-transparent flex justify-between mb-5">
                 <div className="box-border caret-transparent basis-[60px] min-h-[auto] min-w-[auto]">
-                  <img
-                    alt="step-icon-5"
-                    className="box-border caret-transparent inline"
-                  />
+                  <div className="w-12 h-12 rounded-full bg-emerald-400 text-white font-bold text-xl flex items-center justify-center">2</div>
                 </div>
                 <div className="box-border caret-transparent basis-[87%] min-h-[auto] min-w-[auto]">
                   <div className="text-black font-bold box-border caret-transparent leading-[23px]">
@@ -466,10 +436,7 @@ export function ReasonsSection() {
               </div>
               <div className="items-center box-border caret-transparent flex justify-between mb-5">
                 <div className="box-border caret-transparent basis-[60px] min-h-[auto] min-w-[auto]">
-                  <img
-                    alt="step-icon-6"
-                    className="box-border caret-transparent inline"
-                  />
+                  <div className="w-12 h-12 rounded-full bg-emerald-400 text-white font-bold text-xl flex items-center justify-center">3</div>
                 </div>
                 <div className="box-border caret-transparent basis-[87%] min-h-[auto] min-w-[auto]">
                   <div className="text-black font-bold box-border caret-transparent leading-[23px]">
@@ -487,11 +454,8 @@ export function ReasonsSection() {
               </div>
             </div>
           </div>
-          <div className="box-border caret-transparent basis-[45%] min-h-[auto] min-w-[auto] w-full mt-[30px] md:w-auto md:mt-0">
-            <img
-              alt="step-2-asset"
-              className="box-border caret-transparent inline max-w-full"
-            />
+          <div className="box-border caret-transparent basis-[45%] min-h-[auto] min-w-[auto] w-full mt-[30px] md:w-auto md:mt-0 flex items-center justify-center bg-slate-100 rounded-xl p-10">
+            <Phone className="w-24 h-24 text-blue-300" />
           </div>
         </div>
       </div>

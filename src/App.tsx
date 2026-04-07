@@ -37,15 +37,15 @@ export default function App() {
         <div id="home">
           <HeroSection />
         </div>
-        <HowItWorksSection />
-        <ServicesSection />
-        <TrustBadgesSection />
-        <div id="quote">
-          <VideoSection />
+        <div id="how-it-works">
+          <HowItWorksSection />
         </div>
         <div id="services">
-          <SolutionsSection />
+          <ServicesSection />
         </div>
+        <TrustBadgesSection />
+        <VideoSection />
+        <SolutionsSection />
         <div id="about">
           <ReasonsSection />
         </div>
@@ -55,7 +55,9 @@ export default function App() {
         <StatsSection />
         <VideoBannerSection />
         <FiveWaysSection />
-        <StatesSection />
+        <div id="states">
+          <StatesSection />
+        </div>
         <CalculatorPromoSection />
         <PricingFactorsSection />
         <WhyChooseSection />
@@ -63,7 +65,9 @@ export default function App() {
           <FaqSection />
         </div>
         <BlogSection />
-        <ContactSection />
+        <div id="contact">
+          <ContactSection />
+        </div>
       </main>
       <Footer />
 

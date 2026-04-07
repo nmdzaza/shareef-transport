@@ -196,7 +196,7 @@ export function HeroSection() {
 
           {/* Right column: quote calculator card */}
           <div className="box-border caret-transparent col-end-[calc] col-start-[calc] row-end-[calc] row-start-[calc] min-h-[auto] min-w-[auto]">
-            <div className="relative bg-white shadow-[rgba(0,0,0,0.18)_0px_8px_32px_0px] box-border caret-transparent rounded-2xl overflow-hidden">
+            <div id="quote" className="relative bg-white shadow-[rgba(0,0,0,0.18)_0px_8px_32px_0px] box-border caret-transparent rounded-2xl overflow-hidden">
 
               {/* Card header */}
               <div className="bg-gradient-to-r from-blue-900 to-blue-700 px-6 py-5">

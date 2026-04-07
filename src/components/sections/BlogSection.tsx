@@ -1,92 +1,89 @@
 import React from "react";
 
+const posts = [
+  {
+    title: "How Much Does It Cost to Ship a Car in 2026?",
+    excerpt:
+      "Car shipping costs vary based on distance, vehicle type, and transport method. Here's everything you need to know about getting the best rate.",
+    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=80",
+    date: "March 15, 2026",
+    readTime: "5 min read",
+    href: "#",
+  },
+  {
+    title: "Open vs Enclosed Car Transport: Which Should You Choose?",
+    excerpt:
+      "Choosing between open and enclosed transport depends on your vehicle's value and your budget. We break down the pros and cons of each option.",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    date: "March 8, 2026",
+    readTime: "4 min read",
+    href: "#",
+  },
+  {
+    title: "5 Tips for Preparing Your Car for Shipping",
+    excerpt:
+      "Before your vehicle gets picked up, there are a few important steps to take to ensure a smooth and damage-free shipping experience.",
+    image: "https://images.unsplash.com/photo-1549924231-f129b911e442?w=600&q=80",
+    date: "February 28, 2026",
+    readTime: "3 min read",
+    href: "#",
+  },
+];
+
 export function BlogSection() {
   return (
-    <section className="box-border caret-transparent mt-0 pb-10 md:mt-10">
-      <div className="box-border caret-transparent max-w-none w-full mx-auto px-3 md:max-w-[1140px]">
-        <div className="box-border caret-transparent text-center mb-5 md:mb-[60px]">
-          <span className="text-blue-950 text-[29px] font-semibold box-border caret-transparent leading-[42px]">
-            Most Recent Articles
-          </span>
+    <section className="py-16 bg-white">
+      <div className="max-w-6xl mx-auto px-4">
+        {/* Heading */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-[#0a1f44]">Most Recent Articles</h2>
+          <p className="text-neutral-500 mt-2">Tips, insights, and guides for vehicle shipping</p>
         </div>
-        <div className="box-border caret-transparent flex flex-wrap -mx-3">
-          <div className="box-border caret-transparent flex flex-col shrink-0 justify-between max-w-full min-h-[auto] min-w-[auto] w-full mb-9 px-5 md:w-[33.3333%] md:mb-0">
-            <a
-              href="https://shareeftransport.com/how-a-car-vending-machine-works-what-steps-to-take-before-you-buy/"
-              title="See How a Car Vending Machine Works & What Steps to Take Before You Buy"
-              className="text-blue-600 box-border caret-transparent block min-h-[auto] min-w-[auto]"
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {posts.map((post) => (
+            <div
+              key={post.title}
+              className="rounded-2xl overflow-hidden shadow-md border border-gray-100 flex flex-col"
             >
+              {/* Image */}
               <img
-                alt="How a Car Vending Machine Works What Steps to Take Before You Bu"
-                className="box-border caret-transparent inline h-[220px] max-w-full object-cover w-full mb-5 rounded-lg"
+                src={post.image}
+                alt={post.title}
+                className="w-full h-52 object-cover"
               />
-              <div className="box-border caret-transparent">
-                <div className="text-blue-950 text-xl font-semibold box-border caret-transparent leading-[23px] text-center mt-[30px] mb-[18px] md:mt-0">
-                  How a Car Vending Machine Works & What Steps to Take Before
-                  You Buy
+
+              {/* Body */}
+              <div className="flex flex-col flex-1 p-6">
+                {/* Badge */}
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-xs font-semibold text-[#b8960c] bg-[#fdf6e3] px-3 py-1 rounded-full">
+                    {post.date}
+                  </span>
+                  <span className="text-xs text-neutral-400">{post.readTime}</span>
                 </div>
-                <div className="text-neutral-600 font-medium box-border caret-transparent leading-[23px] text-center mb-4">
-                  Learn how Carvana's car vending machines work, what to expect
-                  during pickup, and the key steps to take before buying a car
-                  online in 2026.
-                </div>
+
+                {/* Title */}
+                <h3 className="text-[#0a1f44] text-lg font-bold leading-snug mb-3">
+                  {post.title}
+                </h3>
+
+                {/* Excerpt */}
+                <p className="text-neutral-500 text-sm leading-relaxed flex-1">
+                  {post.excerpt}
+                </p>
+
+                {/* CTA */}
+                <a
+                  href={post.href}
+                  className="mt-5 inline-block text-sm font-semibold text-[#b8960c] hover:text-[#0a1f44] transition-colors"
+                >
+                  Read More →
+                </a>
               </div>
-            </a>
-          </div>
-          <div className="box-border caret-transparent flex flex-col shrink-0 justify-between max-w-full min-h-[auto] min-w-[auto] w-full mb-9 px-5 md:w-[33.3333%] md:mb-0">
-            <a
-              href="https://shareeftransport.com/buying-a-car-from-california/"
-              title="See Buying a Car from California: What Out-of-State Buyers Need to Know"
-              className="text-blue-600 box-border caret-transparent block min-h-[auto] min-w-[auto]"
-            >
-              <img
-                alt="CA MAIN"
-                className="box-border caret-transparent inline h-[220px] max-w-full object-cover w-full mb-5 rounded-lg"
-              />
-              <div className="box-border caret-transparent">
-                <div className="text-blue-950 text-xl font-semibold box-border caret-transparent leading-[23px] text-center mt-[30px] mb-[18px] md:mt-0">
-                  Buying a Car from California: What Out-of-State Buyers Need to
-                  Know
-                </div>
-                <div className="text-neutral-600 font-medium box-border caret-transparent leading-[23px] text-center mb-4">
-                  Thinking about buying a car from California? Discover how the
-                  country's biggest auto market affects pricing, taxes,
-                  inspections, and vehicle shipping.
-                </div>
-              </div>
-            </a>
-          </div>
-          <div className="box-border caret-transparent flex flex-col shrink-0 justify-between max-w-full min-h-[auto] min-w-[auto] w-full mb-9 px-5 md:w-[33.3333%] md:mb-0">
-            <a
-              href="https://shareeftransport.com/how-market-demand-affects-used-car-values/"
-              title="See How Market Demand Affects Used Car Values"
-              className="text-blue-600 box-border caret-transparent block min-h-[auto] min-w-[auto]"
-            >
-              <img
-                alt="Market demand in the used car"
-                className="box-border caret-transparent inline h-[220px] max-w-full object-cover w-full mb-5 rounded-lg"
-              />
-              <div className="box-border caret-transparent">
-                <div className="text-blue-950 text-xl font-semibold box-border caret-transparent leading-[23px] text-center mt-[30px] mb-[18px] md:mt-0">
-                  How Market Demand Affects Used Car Values
-                </div>
-                <div className="text-neutral-600 font-medium box-border caret-transparent leading-[23px] text-center mb-4">
-                  Discover the key demand factors that affect used car pricing
-                  and how you can use market trends to sell your vehicle at the
-                  right time.
-                </div>
-              </div>
-            </a>
-          </div>
-          <div className="box-border caret-transparent shrink-0 max-w-full min-h-[auto] min-w-[auto] text-center w-full mt-2 pt-6 px-3 md:mt-12">
-            <a
-              href="/blog/"
-              title="go blog page"
-              className="text-white font-bold bg-blue-500 box-border caret-transparent inline-block leading-[19px] align-middle px-[60px] py-3 rounded-[30px]"
-            >
-              See All
-            </a>
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

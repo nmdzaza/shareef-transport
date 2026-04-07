@@ -1,11 +1,6 @@
 import React from "react";
 import { Facebook, Instagram, Twitter, Youtube, Linkedin } from "lucide-react";
-import {
-  quickLinks,
-  whoWeServeLinks,
-  transportOptionLinks,
-  socialLinks,
-} from "../../data/footerLinks";
+import { socialLinks } from "../../data/footerLinks";
 
 const socialIconMap: Record<string, React.ReactNode> = {
   facebook: <Facebook className="h-5 w-5" />,
@@ -14,6 +9,46 @@ const socialIconMap: Record<string, React.ReactNode> = {
   youtube: <Youtube className="h-5 w-5" />,
   linkedin: <Linkedin className="h-5 w-5" />,
 };
+
+const scrollTo = (id: string) =>
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+
+const comingSoon = () => alert("Coming Soon!");
+
+const linkBtnClass =
+  "text-neutral-200 text-[15px] box-border caret-transparent leading-[31px] bg-transparent border-none p-0 cursor-pointer text-left hover:text-white transition-colors";
+
+const quickLinkItems = [
+  { label: "Car Shipping Calculator", action: () => scrollTo("quote") },
+  { label: "Moving Cost Calculator", action: () => scrollTo("quote") },
+  { label: "Car Value Calculator", action: () => scrollTo("quote") },
+  { label: "How it works", action: () => scrollTo("how-it-works") },
+  { label: "About Us", action: () => scrollTo("about") },
+  { label: "Contact", action: () => scrollTo("contact") },
+  { label: "Blog", action: comingSoon },
+  { label: "Team", action: () => scrollTo("about") },
+  { label: "Press", action: comingSoon },
+  { label: "Sitemap", action: comingSoon },
+  { label: "Help", action: () => scrollTo("contact") },
+];
+
+const whoWeServeItems = [
+  "Auto Auctions",
+  "Online Car Sellers",
+  "Best Car Dealerships",
+  "Military Members",
+  "Car Relocation Services",
+];
+
+const transportOptionItems = [
+  "Door-to-Door Car Shipping",
+  "Open Car Hauler",
+  "Enclosed Car Hauler",
+  "Expedited Car Shipping",
+  "Cross Country Car Shipping",
+  "Ship Car to Another State",
+  "Classic Car Shipping",
+];
 
 export function Footer() {
   return (
@@ -56,20 +91,27 @@ export function Footer() {
         <div className="box-border caret-transparent max-w-none w-full mx-auto px-3 md:max-w-[1140px]">
           <div className="items-center border-l-neutral-800 border-r-neutral-800 border-t-neutral-800 box-border caret-transparent gap-x-10 flex flex-col justify-between gap-y-10 py-3 border-b-white border-b md:gap-x-[normal] md:flex-row md:gap-y-[normal] md:py-6">
             <div className="box-border caret-transparent min-h-[auto] min-w-[auto]">
-              <img
-                src="/shareef-transport-logo.svg"
-                alt="Shareef Transport logo"
-                className="box-border caret-transparent inline max-w-full"
-              />
+              <div className="flex items-center gap-2">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <rect width="40" height="40" rx="8" fill="#F59E0B"/>
+                  <path d="M5 25 L15 25 L15 20 L25 20 L30 15 L35 25 L35 27 L5 27 Z" fill="#0F172A"/>
+                  <circle cx="12" cy="27" r="3" fill="#0F172A"/>
+                  <circle cx="30" cy="27" r="3" fill="#0F172A"/>
+                </svg>
+                <span className="text-white font-bold text-xl">Shareef Transport</span>
+              </div>
             </div>
             <div className="box-border caret-transparent gap-x-[30px] flex flex-col justify-between min-h-[auto] min-w-[auto] gap-y-[30px] md:gap-x-[50px] md:flex-row md:gap-y-[normal]">
               <div className="items-center box-border caret-transparent flex flex-col justify-between min-h-[auto] min-w-[auto] w-36">
                 <div className="box-border caret-transparent min-h-[auto] min-w-[auto]">
-                  <img
-                    src="/google.svg"
-                    alt="google logo"
-                    className="box-border caret-transparent inline h-[30px] max-w-full"
-                  />
+                  <div className="flex items-center gap-1 h-[30px]">
+                    <span className="font-bold" style={{color:'#4285F4'}}>G</span>
+                    <span className="font-bold" style={{color:'#EA4335'}}>o</span>
+                    <span className="font-bold" style={{color:'#FBBC05'}}>o</span>
+                    <span className="font-bold" style={{color:'#4285F4'}}>g</span>
+                    <span className="font-bold" style={{color:'#34A853'}}>l</span>
+                    <span className="font-bold" style={{color:'#EA4335'}}>e</span>
+                  </div>
                 </div>
                 <div className="box-border caret-transparent flex justify-between min-h-[auto] min-w-[auto] w-full mt-2 md:mt-0.5">
                   <p className="relative text-white text-[15px] font-bold box-border caret-transparent leading-[22.5px] min-h-[auto] min-w-[auto]">
@@ -82,11 +124,9 @@ export function Footer() {
               </div>
               <div className="items-center box-border caret-transparent flex flex-col justify-between min-h-[auto] min-w-[auto] w-36">
                 <div className="box-border caret-transparent min-h-[auto] min-w-[auto]">
-                  <img
-                    src="/trustpilot.svg"
-                    alt="trustpilot logo"
-                    className="box-border caret-transparent inline h-[30px] max-w-full"
-                  />
+                  <div className="h-[30px] flex items-center">
+                    <span className="text-green-500 font-bold text-lg">★ Trustpilot</span>
+                  </div>
                 </div>
                 <div className="box-border caret-transparent flex justify-between min-h-[auto] min-w-[auto] w-full mt-2 md:mt-0.5">
                   <p className="relative text-white text-[15px] font-bold box-border caret-transparent leading-[22.5px] min-h-[auto] min-w-[auto]">
@@ -99,11 +139,9 @@ export function Footer() {
               </div>
               <div className="items-center box-border caret-transparent flex flex-col justify-between min-h-[auto] min-w-[auto] w-36">
                 <div className="box-border caret-transparent min-h-[auto] min-w-[auto]">
-                  <img
-                    src="/bbb.svg"
-                    alt="bbb logo"
-                    className="box-border caret-transparent inline h-[30px] max-w-full"
-                  />
+                  <div className="h-[30px] flex items-center">
+                    <span className="text-blue-700 font-bold">BBB A+</span>
+                  </div>
                 </div>
                 <div className="box-border caret-transparent flex justify-between min-h-[auto] min-w-[auto] w-full mt-2 md:mt-0.5">
                   <p className="relative text-white text-[15px] font-bold box-border caret-transparent leading-[22.5px] min-h-[auto] min-w-[auto]">
@@ -121,6 +159,8 @@ export function Footer() {
                   key={social.id}
                   href={social.href}
                   title={social.title}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={social.className}
                 >
                   {socialIconMap[social.id] ?? (
@@ -143,15 +183,11 @@ export function Footer() {
                   </span>
                 </div>
                 <ul className="box-border caret-transparent list-none mb-4 pl-0">
-                  {quickLinks.map((link) => (
-                    <li key={link.id} className="box-border caret-transparent">
-                      <a
-                        href={link.href}
-                        title={link.title}
-                        className="text-neutral-200 text-[15px] box-border caret-transparent leading-[31px]"
-                      >
+                  {quickLinkItems.map((link) => (
+                    <li key={link.label} className="box-border caret-transparent">
+                      <button onClick={link.action} className={linkBtnClass}>
                         {link.label}
-                      </a>
+                      </button>
                     </li>
                   ))}
                 </ul>
@@ -163,15 +199,11 @@ export function Footer() {
                   </span>
                 </div>
                 <ul className="box-border caret-transparent list-none mb-4 pl-0">
-                  {whoWeServeLinks.map((link) => (
-                    <li key={link.id} className="box-border caret-transparent">
-                      <a
-                        href={link.href}
-                        title={link.title}
-                        className="text-neutral-200 text-[15px] box-border caret-transparent leading-[31px]"
-                      >
-                        {link.label}
-                      </a>
+                  {whoWeServeItems.map((label) => (
+                    <li key={label} className="box-border caret-transparent">
+                      <button onClick={() => scrollTo("quote")} className={linkBtnClass}>
+                        {label}
+                      </button>
                     </li>
                   ))}
                 </ul>
@@ -183,15 +215,11 @@ export function Footer() {
                   </span>
                 </div>
                 <ul className="box-border caret-transparent list-none mb-4 pl-0">
-                  {transportOptionLinks.map((link) => (
-                    <li key={link.id} className="box-border caret-transparent">
-                      <a
-                        href={link.href}
-                        title={link.title}
-                        className="text-neutral-200 text-[15px] box-border caret-transparent leading-[31px]"
-                      >
-                        {link.label}
-                      </a>
+                  {transportOptionItems.map((label) => (
+                    <li key={label} className="box-border caret-transparent">
+                      <button onClick={() => scrollTo("quote")} className={linkBtnClass}>
+                        {label}
+                      </button>
                     </li>
                   ))}
                 </ul>
@@ -217,16 +245,12 @@ export function Footer() {
                   </a>
                 </div>
                 <div className="box-border caret-transparent mt-6">
-                  <img
-                    src="/fmcsa-logo-f.svg"
-                    alt="fmcsa-logo"
-                    className="box-border caret-transparent inline max-w-[220px]"
-                  />
+                  <span className="text-white text-xs border border-white px-2 py-1 rounded">FMCSA Licensed</span>
                   <p className="text-neutral-200 box-border caret-transparent mt-4">
-                    Federal Motor Carrier Safety Administration MC #: 933173
+                    Federal Motor Carrier Safety Administration MC #: [PENDING]
                   </p>
                   <p className="text-neutral-200 box-border caret-transparent mb-4">
-                    U.S.DOT #: 2801954
+                    U.S.DOT #: [PENDING] <span className="text-neutral-400 text-xs">(Apply at FMCSA.dot.gov)</span>
                   </p>
                 </div>
               </div>
