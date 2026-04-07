@@ -79,7 +79,7 @@ export function TestimonialsSection() {
           <div className="box-border caret-transparent shrink-0 max-w-full min-h-[auto] min-w-[auto] w-full px-3">
             <div className="box-border caret-transparent mt-12">
               <a
-                href="/reviews/"
+                href="#testimonials"
                 title="go reviews page"
                 className="text-blue-500 text-[16.4683px] font-bold items-center box-border caret-transparent flex justify-center leading-[27px]"
               >

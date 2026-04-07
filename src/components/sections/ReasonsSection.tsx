@@ -188,14 +188,14 @@ export function ReasonsSection() {
                       In just a few moments, our car transport calculator
                       assesses the price to ship a car. Choose
                       <a
-                        href="/enclosed-auto-transport/"
+                        href="#quote"
                         className="text-blue-600 box-border caret-transparent"
                       >
                         enclosed transport
                       </a>
                       or
                       <a
-                        href="/open-auto-transport/"
+                        href="#quote"
                         className="text-blue-600 box-border caret-transparent"
                       >
                         open car shipping

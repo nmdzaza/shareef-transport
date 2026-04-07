@@ -47,7 +47,7 @@ export function DesktopNav() {
           <div className="items-center box-border caret-transparent flex justify-between">
             <li className="box-border caret-transparent min-h-0 min-w-0 md:min-h-[auto] md:min-w-[auto]">
               <a
-                href="/"
+                href="#"
                 className="text-white text-[13px] font-semibold box-border caret-transparent leading-[19.5px] md:text-base md:leading-6"
               >
                 <img

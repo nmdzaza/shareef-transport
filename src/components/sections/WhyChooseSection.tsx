@@ -56,7 +56,7 @@ export function WhyChooseSection() {
                   </div>
                   <div className="[align-items:normal] box-content caret-black gap-x-[normal] block min-h-0 min-w-0 gap-y-[normal] mt-0 md:items-center md:aspect-auto md:box-border md:caret-transparent md:gap-x-4 md:flex md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:gap-y-4 md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:mt-4 md:scroll-m-0 md:scroll-p-[auto]">
                     <a
-                      href="/contact/"
+                      href="#contact"
                       title="contact us"
                       className="text-black font-normal bg-transparent box-content caret-black inline leading-[normal] min-h-0 min-w-0 text-start align-baseline p-0 rounded-none md:text-white md:font-bold md:aspect-auto md:bg-blue-500 md:box-border md:caret-transparent md:block md:leading-[19px] md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:text-center md:decoration-auto md:underline-offset-auto md:align-middle md:[mask-position:0%] md:bg-left-top md:px-8 md:py-4 md:scroll-m-0 md:scroll-p-[auto] md:rounded-[30px]"
                     >
@@ -129,7 +129,7 @@ export function WhyChooseSection() {
                   </div>
                   <div className="items-center box-border caret-transparent gap-x-4 flex min-h-[auto] min-w-[auto] gap-y-4 mt-4">
                     <a
-                      href="/contact/"
+                      href="#contact"
                       title="contact us"
                       className="text-white font-bold bg-blue-500 box-border caret-transparent block leading-[19px] min-h-[auto] min-w-[auto] text-center align-middle px-8 py-4 rounded-[30px]"
                     >

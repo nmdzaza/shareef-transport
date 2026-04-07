@@ -14,7 +14,7 @@ export function SolutionsSection() {
             />
             <div className="box-border caret-transparent min-h-[auto] min-w-[auto] mt-5 mb-2">
               <a
-                href="/car-shipping-calculator/"
+                href="#quote"
                 title="See More about Travelers Like You"
                 className="text-blue-600 box-border caret-transparent"
               >
@@ -32,7 +32,7 @@ export function SolutionsSection() {
             </div>
             <div className="box-border caret-transparent min-h-[auto] min-w-[auto]">
               <a
-                href="/car-shipping-calculator/"
+                href="#quote"
                 title="See more about car transport"
                 className="text-blue-500 text-[16.4683px] font-bold items-center box-border caret-transparent flex leading-[27px]"
               >
@@ -51,7 +51,7 @@ export function SolutionsSection() {
             />
             <div className="box-border caret-transparent min-h-[auto] min-w-[auto] mt-5 mb-2">
               <a
-                href="/door-to-door-shipping/"
+                href="#quote"
                 title="See more about door-to-door shipping"
                 className="text-blue-600 box-border caret-transparent"
               >
@@ -64,7 +64,7 @@ export function SolutionsSection() {
               <span className="text-neutral-600 text-[15.5px] font-medium box-border caret-transparent">
                 We coordinate your
                 <a
-                  href="/door-to-door-shipping/"
+                  href="#quote"
                   className="text-blue-950 box-border caret-transparent"
                 >
                   door-to-door car shipping
@@ -75,7 +75,7 @@ export function SolutionsSection() {
             </div>
             <div className="box-border caret-transparent min-h-[auto] min-w-[auto]">
               <a
-                href="/door-to-door-shipping/"
+                href="#quote"
                 title="See more about car transport"
                 className="text-blue-500 text-[16.4683px] font-bold items-center box-border caret-transparent flex leading-[27px]"
               >
@@ -94,7 +94,7 @@ export function SolutionsSection() {
             />
             <div className="box-border caret-transparent min-h-[auto] min-w-[auto] mt-5 mb-2">
               <a
-                href="/movers/"
+                href="#quote"
                 title="see more about relocation"
                 className="text-blue-600 box-border caret-transparent"
               >
@@ -124,7 +124,7 @@ export function SolutionsSection() {
             </div>
             <div className="box-border caret-transparent min-h-[auto] min-w-[auto]">
               <a
-                href="/movers/"
+                href="#quote"
                 title="see more about relocation"
                 className="text-blue-500 text-[16.4683px] font-bold items-center box-border caret-transparent flex leading-[27px]"
               >

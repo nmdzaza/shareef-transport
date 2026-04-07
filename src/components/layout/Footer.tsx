@@ -266,15 +266,17 @@ export function Footer() {
               <div className="box-border caret-transparent shrink-0 max-w-full min-h-[auto] min-w-[auto] text-center w-full px-3 md:text-right md:w-6/12">
                 <div className="box-border caret-transparent text-center mt-6 md:text-right md:mt-0">
                   <a
-                    href="/terms-and-conditions/"
+                    href="#"
                     title="Terms & Conditions"
+                    onClick={(e) => { e.preventDefault(); alert("Coming Soon!"); }}
                     className="text-white text-[15px] box-border caret-transparent leading-5 text-center mb-3 md:text-right"
                   >
                     Terms & Conditions
                   </a>
                   <a
-                    href="/privacy-policy/"
+                    href="#"
                     title="Privacy Policy"
+                    onClick={(e) => { e.preventDefault(); alert("Coming Soon!"); }}
                     className="text-white text-[15px] box-border caret-transparent leading-5 text-center ml-4 mb-3 md:text-right"
                   >
                     Privacy Policy

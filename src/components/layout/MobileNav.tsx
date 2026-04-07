@@ -31,7 +31,7 @@ export function MobileNav() {
       <div className="box-border caret-transparent max-w-none w-full mx-auto px-3 md:max-w-[1140px]">
         <div className="items-center box-border caret-transparent inline-flex justify-between w-full py-2.5">
           <div className="box-border caret-transparent min-h-[auto] min-w-[auto] md:min-h-0 md:min-w-0">
-            <a href="/" className="text-blue-600 box-border caret-transparent">
+            <a href="#" className="text-blue-600 box-border caret-transparent">
               <img
                 src="/logo.svg"
                 alt="Shareef Transport logo"
