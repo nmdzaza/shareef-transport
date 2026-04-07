@@ -5,7 +5,7 @@ const posts = [
     title: "How Much Does It Cost to Ship a Car in 2026?",
     excerpt:
       "Car shipping costs vary based on distance, vehicle type, and transport method. Here's everything you need to know about getting the best rate.",
-    image: "/blog-cost-guide.jpg",
+    image: import.meta.env.BASE_URL + "blog-cost-guide.jpg",
     date: "March 15, 2026",
     readTime: "5 min read",
     href: "#",
@@ -14,7 +14,7 @@ const posts = [
     title: "Open vs Enclosed Car Transport: Which Should You Choose?",
     excerpt:
       "Choosing between open and enclosed transport depends on your vehicle's value and your budget. We break down the pros and cons of each option.",
-    image: "/blog-open-transport.jpg",
+    image: import.meta.env.BASE_URL + "blog-open-transport.jpg",
     date: "March 8, 2026",
     readTime: "4 min read",
     href: "#",
@@ -23,7 +23,7 @@ const posts = [
     title: "5 Tips for Preparing Your Car for Shipping",
     excerpt:
       "Before your vehicle gets picked up, there are a few important steps to take to ensure a smooth and damage-free shipping experience.",
-    image: "/blog-enclosed-transport.jpg",
+    image: import.meta.env.BASE_URL + "blog-enclosed-transport.jpg",
     date: "February 28, 2026",
     readTime: "3 min read",
     href: "#",

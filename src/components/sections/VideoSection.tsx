@@ -3,15 +3,15 @@ import { Play } from "lucide-react";
 
 const videos = [
   {
-    src: "/video-thumb-1.jpg",
+    src: import.meta.env.BASE_URL + "video-thumb-1.jpg",
     title: "How Shareef Transport Works",
   },
   {
-    src: "/video-thumb-2.jpg",
+    src: import.meta.env.BASE_URL + "video-thumb-2.jpg",
     title: "Open Car Transport Explained",
   },
   {
-    src: "/video-thumb-3.jpg",
+    src: import.meta.env.BASE_URL + "video-thumb-3.jpg",
     title: "Why Choose Enclosed Transport?",
   },
 ];

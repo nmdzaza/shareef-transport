@@ -155,7 +155,7 @@ export function HeroSection() {
   };
 
   return (
-    <div className="bg-sky-900 bg-none bg-no-repeat bg-cover box-border caret-transparent pt-20 pb-2.5 md:bg-[url('/hero-bg.jpg')] md:pt-[180px] md:pb-[60px]">
+    <div className="bg-sky-900 bg-no-repeat bg-cover box-border caret-transparent pt-20 pb-2.5 md:pt-[180px] md:pb-[60px]" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}hero-bg.jpg)` }}>
       <div className="box-border caret-transparent max-w-none w-full mx-auto px-3 md:max-w-[1140px]">
         <div className="box-border caret-transparent grid [grid-template-areas:'title''calc''phone-wrapper''socials''subtitle'] grid-cols-[1fr] grid-rows-[auto] justify-between gap-y-3 md:[grid-template-areas:'._calc''title_calc''subtitle_calc''phone-wrapper_calc''socials_calc''._calc'] md:grid-cols-[55%_42%] md:grid-rows-[1fr_auto_auto_auto_auto_1fr] md:gap-y-[normal]">
 
