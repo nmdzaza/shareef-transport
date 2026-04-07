@@ -42,7 +42,8 @@ export function CalculatorPromoSection() {
               <div className="box-border caret-transparent basis-full min-h-[auto] min-w-[auto] md:basis-6/12">
                 <img
                   alt="car 1"
-                  className="box-border caret-transparent inline max-w-full w-full"
+                  src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&q=80"
+                  className="box-border caret-transparent inline max-w-full w-full rounded-lg"
                 />
               </div>
             </div>
@@ -50,7 +51,8 @@ export function CalculatorPromoSection() {
               <div className="box-border caret-transparent basis-full min-h-[auto] min-w-[auto] mt-10 md:basis-6/12 md:mt-0">
                 <img
                   alt="car 2"
-                  className="box-border caret-transparent inline max-w-full w-full"
+                  src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=600&q=80"
+                  className="box-border caret-transparent inline max-w-full w-full rounded-lg"
                 />
               </div>
               <div className="box-border caret-transparent basis-full min-h-[auto] min-w-[auto] md:basis-[48%]">
