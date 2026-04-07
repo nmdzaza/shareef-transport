@@ -180,7 +180,7 @@ export default function StatePage() {
               {heroSubtext}
             </p>
             <a
-              href="/#quote"
+              href="#quote"
               className="inline-block bg-amber-400 text-blue-950 font-bold px-8 py-4 rounded-md text-lg hover:bg-amber-300 transition-colors"
             >
               Get a Free Quote
@@ -274,7 +274,7 @@ export default function StatePage() {
       {/* Mobile sticky CTA */}
       <div className="fixed bottom-0 inset-x-0 z-[9999] md:hidden">
         <a
-          href="/#quote"
+          href="#quote"
           className="block w-full bg-lime-300 text-blue-950 font-bold text-base py-4 text-center shadow-[0_-2px_12px_rgba(0,0,0,0.15)]"
         >
           Get Free Quote
