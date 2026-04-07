@@ -23,14 +23,29 @@ export function MobileNav() {
     setWhoWeServeOpen(false);
   };
 
-  const handleAnchorClick = (id: string) => {
+  const goToSection = (id: string) => {
     closeAll();
-    // Navigate to home first if not already there, then scroll to section
-    if (window.location.hash && !window.location.hash.startsWith("#/") || window.location.hash.length <= 1) {
-      setTimeout(() => scrollTo(id), 100);
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
     } else {
       navigate("/");
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
+  };
+
+  const handleAnchorClick = (id: string) => {
+    closeAll();
+    // If on a sub-route (e.g. /#/terms-and-conditions), navigate home first then scroll
+    const hash = window.location.hash;
+    const onSubRoute = hash.startsWith("#/") && hash.length > 2;
+    if (onSubRoute) {
+      navigate("/");
       setTimeout(() => scrollTo(id), 200);
+    } else {
+      setTimeout(() => scrollTo(id), 100);
     }
   };
 
@@ -38,7 +53,8 @@ export function MobileNav() {
   const handleDropdownItemClick = (href: string) => {
     closeAll();
     if (href.startsWith("#/")) {
-      // Route navigation — let the browser handle via href
+      // Route navigation — strip leading # and navigate via React Router
+      navigate(href.slice(1));
       return;
     }
     // Section anchor — strip the leading # and scroll after navigating home
@@ -109,7 +125,7 @@ export function MobileNav() {
             <li className="box-border caret-transparent mb-6">
               <button
                 type="button"
-                onClick={() => handleAnchorClick("home")}
+                onClick={() => goToSection("home")}
                 className="text-white font-medium bg-transparent border-0 text-left px-6 py-0 w-full cursor-pointer"
               >
                 Home
@@ -118,7 +134,7 @@ export function MobileNav() {
             <li className="box-border caret-transparent mb-6">
               <button
                 type="button"
-                onClick={() => handleAnchorClick("quote")}
+                onClick={() => goToSection("quote")}
                 className="text-white font-medium bg-transparent border-0 text-left px-6 py-0 w-full cursor-pointer"
               >
                 Get a Quote
@@ -127,7 +143,7 @@ export function MobileNav() {
             <li className="box-border caret-transparent mb-6">
               <button
                 type="button"
-                onClick={() => handleAnchorClick("services")}
+                onClick={() => goToSection("services")}
                 className="text-white font-medium bg-transparent border-0 text-left px-6 py-0 w-full cursor-pointer"
               >
                 Services
@@ -183,14 +199,14 @@ export function MobileNav() {
                 <ul className="box-border caret-transparent list-[circle] mt-3 pl-8">
                   {whoWeServeOptions.map((item) => (
                     <li key={item.id} className="box-border caret-transparent mb-1.5">
-                      <a
-                        href={item.href}
+                      <button
+                        type="button"
                         title={item.title}
-                        className="text-white font-medium box-border caret-transparent"
-                        onClick={closeAll}
+                        className="text-white font-medium bg-transparent border-0 p-0 cursor-pointer box-border caret-transparent"
+                        onClick={() => handleDropdownItemClick(item.href)}
                       >
                         {item.label}
-                      </a>
+                      </button>
                     </li>
                   ))}
                 </ul>
@@ -199,7 +215,7 @@ export function MobileNav() {
             <li className="box-border caret-transparent mb-6">
               <button
                 type="button"
-                onClick={() => handleAnchorClick("about")}
+                onClick={() => goToSection("about")}
                 className="text-white font-medium bg-transparent border-0 text-left px-6 py-0 w-full cursor-pointer"
               >
                 About Us
@@ -208,7 +224,7 @@ export function MobileNav() {
             <li className="box-border caret-transparent mb-6">
               <button
                 type="button"
-                onClick={() => handleAnchorClick("testimonials")}
+                onClick={() => goToSection("testimonials")}
                 className="text-white font-medium bg-transparent border-0 text-left px-6 py-0 w-full cursor-pointer"
               >
                 Testimonials
@@ -217,7 +233,7 @@ export function MobileNav() {
             <li className="box-border caret-transparent mb-6">
               <button
                 type="button"
-                onClick={() => handleAnchorClick("faq")}
+                onClick={() => goToSection("faq")}
                 className="text-white font-medium bg-transparent border-0 text-left px-6 py-0 w-full cursor-pointer"
               >
                 FAQ
@@ -226,14 +242,23 @@ export function MobileNav() {
             <li className="box-border caret-transparent mb-6">
               <button
                 type="button"
-                onClick={() => handleAnchorClick("contact")}
+                onClick={() => goToSection("contact")}
                 className="text-white font-medium bg-transparent border-0 text-left px-6 py-0 w-full cursor-pointer"
               >
                 Contact
               </button>
             </li>
+            <li className="box-border caret-transparent mb-6">
+              <Link
+                to="/blog"
+                onClick={closeAll}
+                className="text-white font-medium px-6 py-0 w-full cursor-pointer"
+              >
+                Blog
+              </Link>
+            </li>
             <li className="box-border caret-transparent mb-2">
-              <a
+              <
                 href="tel:6025550100"
                 className="text-lime-300 font-bold px-6 text-lg"
                 onClick={closeAll}

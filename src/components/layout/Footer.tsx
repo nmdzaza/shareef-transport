@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Facebook, Instagram, Twitter, Youtube, Linkedin } from "lucide-react";
 import { socialLinks } from "../../data/footerLinks";
 
@@ -11,54 +11,64 @@ const socialIconMap: Record<string, React.ReactNode> = {
   linkedin: <Linkedin className="h-5 w-5" />,
 };
 
-const scrollTo = (id: string) =>
-  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-
-const comingSoon = () => alert("Coming Soon!");
-
 const linkBtnClass =
   "text-neutral-200 text-[15px] box-border caret-transparent leading-[31px] bg-transparent border-none p-0 cursor-pointer text-left hover:text-amber-400 transition-colors";
 
 const linkAnchorClass =
   "text-neutral-200 text-[15px] box-border caret-transparent leading-[31px] cursor-pointer hover:text-amber-400 transition-colors";
 
-const quickLinkItems = [
-  { label: "Car Shipping Calculator", action: () => scrollTo("quote") },
-  { label: "Moving Cost Calculator", action: () => scrollTo("quote") },
-  { label: "Car Value Calculator", action: () => scrollTo("quote") },
-  { label: "How it works", action: () => scrollTo("how-it-works") },
-  { label: "About Us", action: () => scrollTo("about") },
-  { label: "Contact", action: () => scrollTo("contact") },
-  { label: "Blog", routeTo: "/blog" },
-  { label: "Team", action: () => scrollTo("about") },
-  { label: "Press", action: comingSoon },
-  { label: "Sitemap", action: comingSoon },
-  { label: "Help", action: () => scrollTo("faq") },
-];
-
-const whoWeServeItems: { label: string; action: () => void }[] = [
-  { label: "Auto Auctions", action: () => scrollTo("quote") },
-  { label: "Online Car Sellers", action: () => scrollTo("quote") },
-  { label: "Best Car Dealerships", action: () => scrollTo("contact") },
-  { label: "Military Members", action: () => scrollTo("quote") },
-  { label: "Car Relocation Services", action: () => scrollTo("quote") },
-];
-
-type TransportItem =
-  | { label: string; action: () => void; routeTo?: never }
-  | { label: string; routeTo: string; action?: never };
-
-const transportOptionItems: TransportItem[] = [
-  { label: "Door-to-Door Car Shipping", action: () => scrollTo("services") },
-  { label: "Open Car Hauler", routeTo: "/open-auto-transport" },
-  { label: "Enclosed Car Hauler", routeTo: "/enclosed-auto-transport" },
-  { label: "Expedited Car Shipping", action: () => scrollTo("quote") },
-  { label: "Cross Country Car Shipping", action: () => scrollTo("quote") },
-  { label: "Ship Car to Another State", action: () => scrollTo("quote") },
-  { label: "Classic Car Shipping", routeTo: "/enclosed-auto-transport" },
-];
-
 export function Footer() {
+  const navigate = useNavigate();
+
+  const goToSection = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
+  };
+
+  const quickLinkItems = [
+    { label: "Car Shipping Calculator", action: () => goToSection("quote") },
+    { label: "Moving Cost Calculator", action: () => goToSection("quote") },
+    { label: "Car Value Calculator", action: () => goToSection("quote") },
+    { label: "How it works", action: () => goToSection("how-it-works") },
+    { label: "About Us", action: () => goToSection("about") },
+    { label: "Contact", action: () => goToSection("contact") },
+    { label: "Blog", routeTo: "/blog" },
+    { label: "Team", action: () => goToSection("about") },
+    { label: "Press", action: () => alert("Coming Soon!") },
+    { label: "Sitemap", action: () => alert("Coming Soon!") },
+    { label: "Help", action: () => goToSection("faq") },
+  ];
+
+  const whoWeServeItems: { label: string; action: () => void }[] = [
+    { label: "Auto Auctions", action: () => goToSection("quote") },
+    { label: "Online Car Sellers", action: () => goToSection("quote") },
+    { label: "Best Car Dealerships", action: () => goToSection("contact") },
+    { label: "Military Members", action: () => goToSection("quote") },
+    { label: "Car Relocation Services", action: () => goToSection("quote") },
+  ];
+
+  type TransportItem =
+    | { label: string; action: () => void; routeTo?: never }
+    | { label: string; routeTo: string; action?: never };
+
+  const transportOptionItems: TransportItem[] = [
+    { label: "Door-to-Door Car Shipping", action: () => goToSection("services") },
+    { label: "Motorcycle Shipping", routeTo: "/motorcycle-shipping" },
+    { label: "Open Car Hauler", routeTo: "/open-auto-transport" },
+    { label: "Enclosed Car Hauler", routeTo: "/enclosed-auto-transport" },
+    { label: "Expedited Car Shipping", action: () => goToSection("quote") },
+    { label: "Cross Country Car Shipping", action: () => goToSection("quote") },
+    { label: "Ship Car to Another State", action: () => goToSection("quote") },
+    { label: "Classic Car Shipping", routeTo: "/enclosed-auto-transport" },
+  ];
+
   return (
     <>
       <section className="box-border caret-transparent w-full mt-[90px] mx-auto px-3">

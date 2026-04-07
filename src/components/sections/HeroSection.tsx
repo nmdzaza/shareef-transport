@@ -50,7 +50,7 @@ function calcPriceRange(
 }
 
 async function getCityFromZip(zip: string): Promise<string> {
-  const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${zip}&key=${GOOGLE_KEY}`;
+  const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${zip}&components=country:US&region=us&key=${GOOGLE_KEY}`;
   const res = await fetch(url);
   const data = await res.json();
   if (data.status === "OK" && data.results.length > 0) {
@@ -72,8 +72,8 @@ async function getRouteInfo(originZip: string, destZip: string): Promise<{ miles
       "X-Goog-FieldMask": "routes.distanceMeters,routes.duration",
     },
     body: JSON.stringify({
-      origin: { address: originZip },
-      destination: { address: destZip },
+      origin: { address: `${originZip}, USA` },
+      destination: { address: `${destZip}, USA` },
       travelMode: "DRIVE",
     }),
   });

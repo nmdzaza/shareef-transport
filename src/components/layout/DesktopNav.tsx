@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Phone, ArrowRight } from "lucide-react";
 import {
   desktopTopLinks,
@@ -13,6 +13,22 @@ function scrollTo(id: string) {
 }
 
 export function DesktopNav() {
+  const navigate = useNavigate();
+
+  const handleTopLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith("#/")) return; // Route link — let it navigate normally
+    e.preventDefault();
+    const sectionId = href.replace(/^#/, "");
+    const hash = window.location.hash;
+    const onSubRoute = hash.startsWith("#/") && hash.length > 2;
+    if (onSubRoute) {
+      navigate("/");
+      setTimeout(() => scrollTo(sectionId), 200);
+    } else {
+      scrollTo(sectionId);
+    }
+  };
+
   return (
     <>
       {/* Top utility bar */}
@@ -26,6 +42,7 @@ export function DesktopNav() {
                   href={item.href}
                   title={item.title}
                   className="text-slate-400 text-sm font-semibold box-border caret-transparent block leading-[21px] min-h-0 min-w-0 md:min-h-[auto] md:min-w-[auto]"
+                  onClick={(e) => handleTopLinkClick(e, item.href)}
                 >
                   {item.label}
                 </a>
