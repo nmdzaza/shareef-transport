@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter, Youtube, Linkedin } from "lucide-react";
 import { socialLinks } from "../../data/footerLinks";
 
@@ -25,7 +26,7 @@ const quickLinkItems = [
   { label: "How it works", action: () => scrollTo("how-it-works") },
   { label: "About Us", action: () => scrollTo("about") },
   { label: "Contact", action: () => scrollTo("contact") },
-  { label: "Blog", action: comingSoon },
+  { label: "Blog", action: () => window.location.href = "/shareef-transport/blog" },
   { label: "Team", action: () => scrollTo("about") },
   { label: "Press", action: comingSoon },
   { label: "Sitemap", action: comingSoon },
@@ -265,22 +266,20 @@ export function Footer() {
               </div>
               <div className="box-border caret-transparent shrink-0 max-w-full min-h-[auto] min-w-[auto] text-center w-full px-3 md:text-right md:w-6/12">
                 <div className="box-border caret-transparent text-center mt-6 md:text-right md:mt-0">
-                  <a
-                    href="#"
+                  <Link
+                    to="/terms-and-conditions"
                     title="Terms & Conditions"
-                    onClick={(e) => { e.preventDefault(); alert("Coming Soon!"); }}
-                    className="text-white text-[15px] box-border caret-transparent leading-5 text-center mb-3 md:text-right"
+                    className="text-white text-[15px] box-border caret-transparent leading-5 text-center mb-3 md:text-right hover:underline"
                   >
                     Terms & Conditions
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="/privacy-policy"
                     title="Privacy Policy"
-                    onClick={(e) => { e.preventDefault(); alert("Coming Soon!"); }}
-                    className="text-white text-[15px] box-border caret-transparent leading-5 text-center ml-4 mb-3 md:text-right"
+                    className="text-white text-[15px] box-border caret-transparent leading-5 text-center ml-4 mb-3 md:text-right hover:underline"
                   >
                     Privacy Policy
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
