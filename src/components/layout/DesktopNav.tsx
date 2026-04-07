@@ -51,7 +51,7 @@ export function DesktopNav() {
                 className="text-white text-[13px] font-semibold box-border caret-transparent leading-[19.5px] md:text-base md:leading-6"
               >
                 <img
-                  src="/logo-white.svg"
+                  src={import.meta.env.BASE_URL + "logo-white.svg"}
                   alt="Shareef Transport logo"
                   className="text-[13px] box-border caret-transparent leading-[19.5px] pb-2 md:text-base md:leading-6"
                 />

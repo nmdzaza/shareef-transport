@@ -4,6 +4,7 @@ export interface StateLink {
   label: string;
   href: string;
   isHotRoute?: boolean;
+  isInternal?: boolean;
 }
 
 export const stateLinks: StateLink[] = [
@@ -36,7 +37,8 @@ export const stateLinks: StateLink[] = [
     id: "california",
     name: "California",
     label: "California\nCar Shipping",
-    href: "https://shareeftransport.com/state/california-car-shipping/",
+    href: "/shareef-transport/california-car-shipping",
+    isInternal: true,
   },
   {
     id: "colorado",
@@ -60,8 +62,9 @@ export const stateLinks: StateLink[] = [
     id: "florida",
     name: "Florida",
     label: "Florida\nCar Shipping",
-    href: "https://shareeftransport.com/state/florida-car-shipping/",
+    href: "/shareef-transport/florida-car-shipping",
     isHotRoute: true,
+    isInternal: true,
   },
   {
     id: "georgia",
@@ -197,7 +200,8 @@ export const stateLinks: StateLink[] = [
     id: "new-york",
     name: "New York",
     label: "New York\nCar Shipping",
-    href: "https://shareeftransport.com/state/new-york-car-shipping/",
+    href: "/shareef-transport/new-york-car-shipping",
+    isInternal: true,
   },
   {
     id: "north-carolina",
@@ -271,7 +275,9 @@ export const stateLinks: StateLink[] = [
     id: "texas",
     name: "Texas",
     label: "Texas\nCar Shipping",
-    href: "https://shareeftransport.com/state/texas-car-shipping/",
+    href: "/shareef-transport/texas-car-shipping",
+    isHotRoute: true,
+    isInternal: true,
   },
   {
     id: "utah",

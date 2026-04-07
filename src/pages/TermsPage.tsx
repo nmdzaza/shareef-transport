@@ -48,7 +48,7 @@ export default function TermsPage() {
             </a>{" "}
             and when you use Shareef Transport&apos;s Services (defined
             below). Please read these Terms carefully. If you do not agree with
-            these terms, you are not permitted to use Nexus Auto
+            these terms, you are not permitted to use Shareef Transport
             Transport&apos;s Services or{" "}
             <a
               href="https://shareeftransport.com/"
@@ -123,12 +123,12 @@ export default function TermsPage() {
             has dispatched a Carrier to transport your Vehicle. In providing
             Shareef Transport&apos;s Broker Services, Shareef Transport is acting solely
             in the capacity of a vehicle transport broker to connect you with a
-            Carrier who is willing to transport your Vehicle. Nexus Auto
+            Carrier who is willing to transport your Vehicle. Shareef Transport
             Transport&apos;s involvement is limited strictly to the role of a
             broker between services sought by the Client and fulfilled by the
-            Carrier. Nothing in this Agreement shall be construed to mean Nexus
-            Auto Transport is subcontracting work to the Carrier. Nexus Auto
-            Transport is not responsible for moving any vehicle nor will Nexus
+            Carrier. Nothing in this Agreement shall be construed to mean Shareef Transport
+            Auto Transport is subcontracting work to the Carrier. Shareef Transport
+            Transport is not responsible for moving any vehicle nor will Shareef Transport
             Auto Transport take possession of any vehicle.
           </p>
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
@@ -167,7 +167,7 @@ export default function TermsPage() {
             obligations due to or otherwise involving Carrier Representatives
             (including compensation of its Drivers) arising out of
             Carrier&apos;s Services. Shareef Transport is not an agent of
-            Carrier or Client, and Carrier is not an agent of Nexus Auto
+            Carrier or Client, and Carrier is not an agent of Shareef Transport
             Transport. This Agreement does not create a joint venture, joint
             enterprise or partnership between Shareef Transport, the Client,
             and/or Carrier.
@@ -194,7 +194,7 @@ export default function TermsPage() {
             responsible individuals who will be present at Pickup and Delivery,
             the type of transport you would like (e.g., open or enclosed
             carrier), and a credit/debit card number for payment. After all of
-            the necessary information is provided for Client&apos;s Order, Nexus
+            the necessary information is provided for Client&apos;s Order, Shareef Transport
             Auto Transport will send you an email (&ldquo;Order Confirmation
             Email&rdquo;). By submitting Client&apos;s Order, you represent that
             all information you provided is complete and accurate and agree to
@@ -202,7 +202,7 @@ export default function TermsPage() {
             transportation of your Vehicle to Carrier.
           </p>
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
-            By submitting Client&apos;s Order, you authorize Nexus Auto
+            By submitting Client&apos;s Order, you authorize Shareef Transport
             Transport to provide your contact information (email address and
             phone number) and all of the details of Client&apos;s Order to
             prospective Carriers and represent and warrant that you are the
@@ -292,7 +292,7 @@ export default function TermsPage() {
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
             Failure to take these steps will result in you being liable for
             damages caused to your Vehicle, the transport vehicle, or other
-            property. Neither Carrier nor Nexus Transport Auto will be liable
+            property. Neither Carrier nor Shareef Transport will be liable
             for any damages or loss caused to your Vehicle or any other property
             that is caused in part by your failure to reasonably comply with
             this Agreement. Any items left in your Vehicle shall be at your own
@@ -416,7 +416,7 @@ export default function TermsPage() {
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
             If Client decides to file a claim against the Carrier, Client must
             promptly report such claim to Shareef Transport, but in no event
-            later than seventy-two (72) hours of the delivery, so Nexus Auto
+            later than seventy-two (72) hours of the delivery, so Shareef Transport
             Transport may provide the Client with relevant documents regarding
             the Carrier in a commercially reasonable manner.
           </p>
@@ -586,7 +586,7 @@ export default function TermsPage() {
             </strong>
           </p>
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
-            Client agrees to defend, indemnify, and hold harmless Nexus Auto
+            Client agrees to defend, indemnify, and hold harmless Shareef Transport
             Transport, its affiliates, as well as its directors, officers,
             employees, agents and representatives (collectively, the
             &ldquo;Indemnified Parties&rdquo;), from and against all losses,
@@ -674,7 +674,7 @@ export default function TermsPage() {
             Schaumburg, IL 60173
           </p>
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
-            If Nexus initiates arbitration, it shall send such notice to Client
+            If Shareef Transport initiates arbitration, it shall send such notice to Client
             at the last known address or by electronic mail if no physical
             address is available.
           </p>
@@ -695,7 +695,7 @@ export default function TermsPage() {
             Payment of administrative and arbitrator fees shall be governed by
             the NAM&apos;s rules, except that all filing fees shall be paid by
             the filing party. If Client is the prevailing party, Client may seek
-            reimbursement of its reasonable fees and costs. If Nexus is the
+            reimbursement of its reasonable fees and costs. If Shareef Transport is the
             prevailing party, it may seek reimbursement of its attorneys&apos;
             fees and costs if the arbitrator determines Client&apos;s claims
             were frivolous.
@@ -873,7 +873,7 @@ export default function TermsPage() {
             performance or exercising any right hereunder on any one occasion
             shall not be construed as a bar to or waiver of such performance or
             right, or of any right or remedy under this Agreement, on any future
-            occasion. A waiver must be in writing, executed by Nexus Auto
+            occasion. A waiver must be in writing, executed by Shareef Transport
             Transport, in order to be enforceable.
           </p>
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
@@ -896,7 +896,7 @@ export default function TermsPage() {
           </p>
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
             You represent that you have carefully read and understand the scope
-            and effect of the provisions of these Terms. Neither you nor Nexus
+            and effect of the provisions of these Terms. Neither you nor Shareef Transport
             Auto Transport has relied upon any representations or statements
             made by the other party which are not specifically set forth in
             these Terms.

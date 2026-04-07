@@ -8,7 +8,7 @@ export function SolutionsSection() {
         <div className="bg-gray-50 shadow-[rgba(0,0,0,0.07)_7px_7px_13px_0px] box-border caret-transparent basis-full min-h-[auto] min-w-[auto] border border-zinc-200 mb-6 rounded-[4.23913px] border-solid md:basis-[32%] md:mb-0">
           <div className="items-baseline box-border caret-transparent flex flex-col h-full px-5 py-6">
             <img
-              src="/solution-car.svg"
+              src={import.meta.env.BASE_URL + "solution-car.svg"}
               alt="solution-icon"
               className="box-border caret-transparent max-w-full min-h-[auto] min-w-[auto]"
             />
@@ -45,7 +45,7 @@ export function SolutionsSection() {
         <div className="bg-gray-50 shadow-[rgba(0,0,0,0.07)_7px_7px_13px_0px] box-border caret-transparent basis-full min-h-[auto] min-w-[auto] border border-zinc-200 mb-6 rounded-[4.23913px] border-solid md:basis-[32%] md:mb-0">
           <div className="items-baseline box-border caret-transparent flex flex-col h-full px-5 py-6">
             <img
-              src="/solution-enclosed.svg"
+              src={import.meta.env.BASE_URL + "solution-enclosed.svg"}
               alt="solution-icon"
               className="box-border caret-transparent max-w-full min-h-[auto] min-w-[auto]"
             />
@@ -88,7 +88,7 @@ export function SolutionsSection() {
         <div className="bg-gray-50 shadow-[rgba(0,0,0,0.07)_7px_7px_13px_0px] box-border caret-transparent basis-full grow min-h-[auto] min-w-[auto] border border-zinc-200 mb-6 rounded-[4.23913px] border-solid md:basis-[32%] md:grow-0 md:mb-0">
           <div className="items-baseline box-border caret-transparent flex flex-col h-full px-5 py-6">
             <img
-              src="/solution-motorcycle.svg"
+              src={import.meta.env.BASE_URL + "solution-motorcycle.svg"}
               alt="solution-icon"
               className="box-border caret-transparent max-w-full min-h-[auto] min-w-[auto]"
             />

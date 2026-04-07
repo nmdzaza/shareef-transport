@@ -28,7 +28,7 @@ export function FiveWaysSection() {
               <div className="box-border caret-transparent">
                 <img
                   alt="reason-icon-1"
-                  src="/reason-icon-1.jpg"
+                  src={import.meta.env.BASE_URL + "reason-icon-1.jpg"}
                   className="box-border caret-transparent inline max-w-full"
                 />
               </div>
@@ -63,7 +63,7 @@ export function FiveWaysSection() {
               <div className="box-border caret-transparent">
                 <img
                   alt="reason-icon-2"
-                  src="/reason-icon-2.jpg"
+                  src={import.meta.env.BASE_URL + "reason-icon-2.jpg"}
                   className="box-border caret-transparent inline max-w-full"
                 />
               </div>
@@ -86,7 +86,7 @@ export function FiveWaysSection() {
               <div className="box-border caret-transparent">
                 <img
                   alt="reason-icon-3"
-                  src="/reason-icon-3.jpg"
+                  src={import.meta.env.BASE_URL + "reason-icon-3.jpg"}
                   className="box-border caret-transparent inline max-w-full"
                 />
               </div>
@@ -110,7 +110,7 @@ export function FiveWaysSection() {
               <div className="box-border caret-transparent">
                 <img
                   alt="reason-icon-4"
-                  src="/reason-icon-4.jpg"
+                  src={import.meta.env.BASE_URL + "reason-icon-4.jpg"}
                   className="box-border caret-transparent inline max-w-full"
                 />
               </div>
@@ -135,7 +135,7 @@ export function FiveWaysSection() {
               <div className="box-border caret-transparent">
                 <img
                   alt="reason-icon-5"
-                  src="/reason-icon-5.jpg"
+                  src={import.meta.env.BASE_URL + "reason-icon-5.jpg"}
                   className="box-border caret-transparent inline max-w-full"
                 />
               </div>

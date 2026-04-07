@@ -7,7 +7,7 @@ import path from "path";
 export default defineConfig({
   plugins: [react()],
   publicDir: "./public",
-  base: "/shareef-transport/",
+  base: "./",
   css: {
     postcss: {
       plugins: [tailwind()],

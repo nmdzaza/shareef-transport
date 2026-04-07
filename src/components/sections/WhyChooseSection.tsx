@@ -11,7 +11,7 @@ export function WhyChooseSection() {
                 <div className="box-content caret-black basis-auto min-h-0 min-w-0 md:aspect-auto md:box-border md:caret-transparent md:basis-[30%] md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
                   <img
                     alt="why image"
-                    src="/why-transport-1.jpg"
+                    src={import.meta.env.BASE_URL + "why-transport-1.jpg"}
                     className="box-content caret-black block max-w-none rounded-none md:aspect-auto md:box-border md:caret-transparent md:inline md:max-w-full md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:rounded-[10px]"
                   />
                 </div>
@@ -75,7 +75,7 @@ export function WhyChooseSection() {
                 <div className="box-border caret-transparent basis-full min-h-[auto] min-w-[auto] md:basis-[30%]">
                   <img
                     alt="why image"
-                    src="/why-transport-2.jpg"
+                    src={import.meta.env.BASE_URL + "why-transport-2.jpg"}
                     className="box-border caret-transparent inline max-w-full rounded-[10px]"
                   />
                 </div>

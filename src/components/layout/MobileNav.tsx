@@ -33,7 +33,7 @@ export function MobileNav() {
           <div className="box-border caret-transparent min-h-[auto] min-w-[auto] md:min-h-0 md:min-w-0">
             <a href="#" className="text-blue-600 box-border caret-transparent">
               <img
-                src="/logo.svg"
+                src={import.meta.env.BASE_URL + "logo.svg"}
                 alt="Shareef Transport logo"
                 className="box-border caret-transparent inline h-10 max-w-full"
               />

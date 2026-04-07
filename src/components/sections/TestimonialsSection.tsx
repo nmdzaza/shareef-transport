@@ -26,7 +26,7 @@ export function TestimonialsSection() {
                   <div className="items-start box-border caret-transparent flex h-[70px] mb-4">
                     <div className="box-border caret-transparent min-h-[auto] min-w-[auto] mr-4">
                       <img
-                        src="/quote.svg"
+                        src={import.meta.env.BASE_URL + "quote.svg"}
                         alt="quote-icon"
                         className="box-border caret-transparent inline max-w-full"
                       />

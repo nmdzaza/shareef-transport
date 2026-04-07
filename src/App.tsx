@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import BlogPage from "./pages/BlogPage";
 import TermsPage from "./pages/TermsPage";
@@ -8,7 +8,7 @@ import StatePage from "./pages/StatePage";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/shareef-transport">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blog" element={<BlogPage />} />
@@ -16,6 +16,6 @@ export default function App() {
         <Route path="/privacy-policy" element={<PrivacyPage />} />
         <Route path="/:stateSlug" element={<StatePage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { stateLinks } from "../../data/states";
 
 const stateAbbreviations: Record<string, string> = {
@@ -73,12 +74,21 @@ export function StatesSection() {
                   <div className="w-8 h-6 bg-blue-600 rounded text-white text-xs flex items-center justify-center font-bold flex-shrink-0">
                     {abbr}
                   </div>
-                  <a
-                    href={state.href}
-                    className="text-slate-400 text-base font-semibold box-border caret-transparent block leading-[22.4px] min-h-[auto] min-w-[auto] ml-2 mr-1 md:text-[15px] md:leading-[21px] md:mr-1.5"
-                  >
-                    {state.label}
-                  </a>
+                  {state.isInternal ? (
+                    <Link
+                      to={state.href.replace("/shareef-transport", "")}
+                      className="text-slate-400 text-base font-semibold box-border caret-transparent block leading-[22.4px] min-h-[auto] min-w-[auto] ml-2 mr-1 md:text-[15px] md:leading-[21px] md:mr-1.5"
+                    >
+                      {state.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href="#quote"
+                      className="text-slate-400 text-base font-semibold box-border caret-transparent block leading-[22.4px] min-h-[auto] min-w-[auto] ml-2 mr-1 md:text-[15px] md:leading-[21px] md:mr-1.5"
+                    >
+                      {state.label}
+                    </a>
+                  )}
                   {state.isHotRoute && (
                     <span className="text-orange-500 text-base" title="Hot Route">
                       🔥

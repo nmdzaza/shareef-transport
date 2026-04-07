@@ -874,7 +874,7 @@ function PrivacyPolicyContent() {
             Reference fake shipments or deliveries.
           </li>
           <li className="text-slate-400 text-xl box-border caret-transparent leading-[30px]">
-            Use deceptive sender names, such as &ldquo;Nexus Auto.&rdquo;
+            Use deceptive sender names, such as &ldquo;Shareef Transport.&rdquo;
           </li>
         </ul>
         <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
