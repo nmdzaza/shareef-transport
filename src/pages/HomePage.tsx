@@ -21,6 +21,7 @@ import { WhyChooseSection } from "../components/sections/WhyChooseSection";
 import { FaqSection } from "../components/sections/FaqSection";
 import { BlogSection } from "../components/sections/BlogSection";
 import { ContactSection } from "../components/sections/ContactSection";
+import { AIQuoteWidget } from "../components/sections/AIQuoteWidget";
 
 function scrollTo(id: string) {
   const el = document.getElementById(id);
@@ -39,6 +40,9 @@ export default function HomePage() {
         </div>
         <div id="how-it-works">
           <HowItWorksSection />
+        </div>
+        <div id="ai-quote">
+          <AIQuoteWidget />
         </div>
         <div id="services">
           <ServicesSection />
