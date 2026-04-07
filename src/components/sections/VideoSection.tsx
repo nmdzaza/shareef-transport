@@ -3,15 +3,15 @@ import { Play } from "lucide-react";
 
 const videos = [
   {
-    src: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=640&q=80",
+    src: "/video-thumb-1.jpg",
     title: "How Shareef Transport Works",
   },
   {
-    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=640&q=80",
+    src: "/video-thumb-2.jpg",
     title: "Open Car Transport Explained",
   },
   {
-    src: "https://images.unsplash.com/photo-1549924231-f129b911e442?w=640&q=80",
+    src: "/video-thumb-3.jpg",
     title: "Why Choose Enclosed Transport?",
   },
 ];

@@ -15,7 +15,7 @@ export function VideoBannerSection() {
       <div className="relative">
         <img
           alt="Shareef Transport vehicle shipping"
-          src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1920&q=80"
+          src="/video-banner-bg.jpg"
           className="box-border caret-transparent inline min-h-[250px] object-cover w-full md:min-h-0 md:object-fill"
         />
         <div className="absolute inset-0 bg-blue-950/50 flex flex-col items-center justify-center gap-6">
