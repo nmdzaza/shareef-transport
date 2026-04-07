@@ -3,14 +3,14 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('url('https://nexusautotransport.com/fonts/montserrat/montserrat-latin.woff2') format("woff2")');
+  src: url('url('https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2') format("woff2")');
   font-weight: 300 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'swiper-icons';
-  src: url('url('engine://font-1775524108953-kad3bfpuk')');
+  src: url('https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
