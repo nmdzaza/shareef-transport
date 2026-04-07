@@ -17,7 +17,10 @@ const scrollTo = (id: string) =>
 const comingSoon = () => alert("Coming Soon!");
 
 const linkBtnClass =
-  "text-neutral-200 text-[15px] box-border caret-transparent leading-[31px] bg-transparent border-none p-0 cursor-pointer text-left hover:text-white transition-colors";
+  "text-neutral-200 text-[15px] box-border caret-transparent leading-[31px] bg-transparent border-none p-0 cursor-pointer text-left hover:text-amber-400 transition-colors";
+
+const linkAnchorClass =
+  "text-neutral-200 text-[15px] box-border caret-transparent leading-[31px] cursor-pointer hover:text-amber-400 transition-colors";
 
 const quickLinkItems = [
   { label: "Car Shipping Calculator", action: () => scrollTo("quote") },
@@ -26,29 +29,33 @@ const quickLinkItems = [
   { label: "How it works", action: () => scrollTo("how-it-works") },
   { label: "About Us", action: () => scrollTo("about") },
   { label: "Contact", action: () => scrollTo("contact") },
-  { label: "Blog", action: () => window.location.href = "/shareef-transport/blog" },
+  { label: "Blog", routeTo: "/blog" },
   { label: "Team", action: () => scrollTo("about") },
   { label: "Press", action: comingSoon },
   { label: "Sitemap", action: comingSoon },
-  { label: "Help", action: () => scrollTo("contact") },
+  { label: "Help", action: () => scrollTo("faq") },
 ];
 
-const whoWeServeItems = [
-  "Auto Auctions",
-  "Online Car Sellers",
-  "Best Car Dealerships",
-  "Military Members",
-  "Car Relocation Services",
+const whoWeServeItems: { label: string; action: () => void }[] = [
+  { label: "Auto Auctions", action: () => scrollTo("quote") },
+  { label: "Online Car Sellers", action: () => scrollTo("quote") },
+  { label: "Best Car Dealerships", action: () => scrollTo("contact") },
+  { label: "Military Members", action: () => scrollTo("quote") },
+  { label: "Car Relocation Services", action: () => scrollTo("quote") },
 ];
 
-const transportOptionItems = [
-  "Door-to-Door Car Shipping",
-  "Open Car Hauler",
-  "Enclosed Car Hauler",
-  "Expedited Car Shipping",
-  "Cross Country Car Shipping",
-  "Ship Car to Another State",
-  "Classic Car Shipping",
+type TransportItem =
+  | { label: string; action: () => void; routeTo?: never }
+  | { label: string; routeTo: string; action?: never };
+
+const transportOptionItems: TransportItem[] = [
+  { label: "Door-to-Door Car Shipping", action: () => scrollTo("services") },
+  { label: "Open Car Hauler", routeTo: "/open-auto-transport" },
+  { label: "Enclosed Car Hauler", routeTo: "/enclosed-auto-transport" },
+  { label: "Expedited Car Shipping", action: () => scrollTo("quote") },
+  { label: "Cross Country Car Shipping", action: () => scrollTo("quote") },
+  { label: "Ship Car to Another State", action: () => scrollTo("quote") },
+  { label: "Classic Car Shipping", routeTo: "/enclosed-auto-transport" },
 ];
 
 export function Footer() {
@@ -186,9 +193,15 @@ export function Footer() {
                 <ul className="box-border caret-transparent list-none mb-4 pl-0">
                   {quickLinkItems.map((link) => (
                     <li key={link.label} className="box-border caret-transparent">
-                      <button onClick={link.action} className={linkBtnClass}>
-                        {link.label}
-                      </button>
+                      {link.routeTo ? (
+                        <Link to={link.routeTo} className={linkAnchorClass}>
+                          {link.label}
+                        </Link>
+                      ) : (
+                        <button onClick={link.action} className={linkBtnClass}>
+                          {link.label}
+                        </button>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -200,10 +213,10 @@ export function Footer() {
                   </span>
                 </div>
                 <ul className="box-border caret-transparent list-none mb-4 pl-0">
-                  {whoWeServeItems.map((label) => (
-                    <li key={label} className="box-border caret-transparent">
-                      <button onClick={() => scrollTo("quote")} className={linkBtnClass}>
-                        {label}
+                  {whoWeServeItems.map((item) => (
+                    <li key={item.label} className="box-border caret-transparent">
+                      <button onClick={item.action} className={linkBtnClass}>
+                        {item.label}
                       </button>
                     </li>
                   ))}
@@ -216,11 +229,17 @@ export function Footer() {
                   </span>
                 </div>
                 <ul className="box-border caret-transparent list-none mb-4 pl-0">
-                  {transportOptionItems.map((label) => (
-                    <li key={label} className="box-border caret-transparent">
-                      <button onClick={() => scrollTo("quote")} className={linkBtnClass}>
-                        {label}
-                      </button>
+                  {transportOptionItems.map((item) => (
+                    <li key={item.label} className="box-border caret-transparent">
+                      {item.routeTo ? (
+                        <Link to={item.routeTo} className={linkAnchorClass}>
+                          {item.label}
+                        </Link>
+                      ) : (
+                        <button onClick={item.action} className={linkBtnClass}>
+                          {item.label}
+                        </button>
+                      )}
                     </li>
                   ))}
                 </ul>
