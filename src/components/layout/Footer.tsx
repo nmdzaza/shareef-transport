@@ -1,10 +1,19 @@
 import React from "react";
+import { Facebook, Instagram, Twitter, Youtube, Linkedin } from "lucide-react";
 import {
   quickLinks,
   whoWeServeLinks,
   transportOptionLinks,
   socialLinks,
 } from "../../data/footerLinks";
+
+const socialIconMap: Record<string, React.ReactNode> = {
+  facebook: <Facebook className="h-5 w-5" />,
+  instagram: <Instagram className="h-5 w-5" />,
+  twitter: <Twitter className="h-5 w-5" />,
+  youtube: <Youtube className="h-5 w-5" />,
+  linkedin: <Linkedin className="h-5 w-5" />,
+};
 
 export function Footer() {
   return (
@@ -17,28 +26,28 @@ export function Footer() {
               href="#"
               className="relative text-blue-600 box-border caret-transparent hidden grayscale-[0.6] grow-[2] h-[300px] min-h-0 min-w-0 overflow-hidden md:block md:min-h-[auto] md:min-w-[auto] before:accent-auto before:bg-[linear-gradient(rgb(250,251,252)_0px,rgba(0,212,251,0)_81%)] before:box-border before:caret-transparent before:text-blue-600 before:block before:text-base before:not-italic before:normal-nums before:font-normal before:h-[225px] before:tracking-[normal] before:leading-6 before:list-outside before:list-disc before:pointer-events-auto before:absolute before:text-start before:no-underline before:indent-[0px] before:normal-case before:visible before:w-full before:z-[1] before:border-separate before:font-montserrat"
             >
-              <div className="relative bg-[url('https://c.animaapp.com/mnnx669pIjQjBB/assets/pickup_2022-02-11-154159_romo_2022-02-15-225848_hjpn.webp')] bg-no-repeat bg-cover box-border caret-transparent h-full bg-center"></div>
+              <div className="relative bg-[url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80')] bg-no-repeat bg-cover box-border caret-transparent h-full bg-center"></div>
             </a>
             <a
               title="See Image"
               href="#"
               className="relative text-blue-600 box-border caret-transparent block grayscale-[0.6] grow-[2] h-[300px] min-h-[auto] min-w-[auto] overflow-hidden before:accent-auto before:bg-[linear-gradient(rgb(250,251,252)_0px,rgba(0,212,251,0)_81%)] before:box-border before:caret-transparent before:text-blue-600 before:block before:text-base before:not-italic before:normal-nums before:font-normal before:h-[225px] before:tracking-[normal] before:leading-6 before:list-outside before:list-disc before:pointer-events-auto before:absolute before:text-start before:no-underline before:indent-[0px] before:normal-case before:visible before:w-full before:z-[1] before:border-separate before:font-montserrat"
             >
-              <div className="relative bg-[url('https://c.animaapp.com/mnnx669pIjQjBB/assets/2022-01-24.webp')] bg-no-repeat bg-cover box-border caret-transparent h-full bg-center"></div>
+              <div className="relative bg-[url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80')] bg-no-repeat bg-cover box-border caret-transparent h-full bg-center"></div>
             </a>
             <a
               title="See Image"
               href="#"
               className="relative text-blue-600 box-border caret-transparent hidden grayscale-[0.6] grow-[2] h-[300px] min-h-0 min-w-0 overflow-hidden md:block md:min-h-[auto] md:min-w-[auto] before:accent-auto before:bg-[linear-gradient(rgb(250,251,252)_0px,rgba(0,212,251,0)_81%)] before:box-border before:caret-transparent before:text-blue-600 before:block before:text-base before:not-italic before:normal-nums before:font-normal before:h-[225px] before:tracking-[normal] before:leading-6 before:list-outside before:list-disc before:pointer-events-auto before:absolute before:text-start before:no-underline before:indent-[0px] before:normal-case before:visible before:w-full before:z-[1] before:border-separate before:font-montserrat"
             >
-              <div className="relative bg-[url('https://c.animaapp.com/mnnx669pIjQjBB/assets/Nexus-35.webp')] bg-no-repeat bg-cover box-border caret-transparent h-full bg-center"></div>
+              <div className="relative bg-[url('https://images.unsplash.com/photo-1549924231-f129b911e442?w=800&q=80')] bg-no-repeat bg-cover box-border caret-transparent h-full bg-center"></div>
             </a>
             <a
               title="See Image"
               href="#"
               className="relative text-blue-600 box-border caret-transparent block grayscale-[0.6] grow-[2] h-[300px] min-h-[auto] min-w-[auto] overflow-hidden before:accent-auto before:bg-[linear-gradient(rgb(250,251,252)_0px,rgba(0,212,251,0)_81%)] before:box-border before:caret-transparent before:text-blue-600 before:block before:text-base before:not-italic before:normal-nums before:font-normal before:h-[225px] before:tracking-[normal] before:leading-6 before:list-outside before:list-disc before:pointer-events-auto before:absolute before:text-start before:no-underline before:indent-[0px] before:normal-case before:visible before:w-full before:z-[1] before:border-separate before:font-montserrat"
             >
-              <div className="relative bg-[url('https://c.animaapp.com/mnnx669pIjQjBB/assets/nexus-cars.webp')] bg-no-repeat bg-cover box-border caret-transparent h-full bg-center"></div>
+              <div className="relative bg-[url('https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80')] bg-no-repeat bg-cover box-border caret-transparent h-full bg-center"></div>
             </a>
           </div>
         </div>
@@ -48,7 +57,7 @@ export function Footer() {
           <div className="items-center border-l-neutral-800 border-r-neutral-800 border-t-neutral-800 box-border caret-transparent gap-x-10 flex flex-col justify-between gap-y-10 py-3 border-b-white border-b md:gap-x-[normal] md:flex-row md:gap-y-[normal] md:py-6">
             <div className="box-border caret-transparent min-h-[auto] min-w-[auto]">
               <img
-                src="https://c.animaapp.com/mnnx669pIjQjBB/assets/nexus-logo.svg"
+                src="/shareef-transport-logo.svg"
                 alt="Shareef Transport logo"
                 className="box-border caret-transparent inline max-w-full"
               />
@@ -57,7 +66,7 @@ export function Footer() {
               <div className="items-center box-border caret-transparent flex flex-col justify-between min-h-[auto] min-w-[auto] w-36">
                 <div className="box-border caret-transparent min-h-[auto] min-w-[auto]">
                   <img
-                    src="https://c.animaapp.com/mnnx669pIjQjBB/assets/google.svg"
+                    src="/google.svg"
                     alt="google logo"
                     className="box-border caret-transparent inline h-[30px] max-w-full"
                   />
@@ -74,7 +83,7 @@ export function Footer() {
               <div className="items-center box-border caret-transparent flex flex-col justify-between min-h-[auto] min-w-[auto] w-36">
                 <div className="box-border caret-transparent min-h-[auto] min-w-[auto]">
                   <img
-                    src="https://c.animaapp.com/mnnx669pIjQjBB/assets/trustpilot.svg"
+                    src="/trustpilot.svg"
                     alt="trustpilot logo"
                     className="box-border caret-transparent inline h-[30px] max-w-full"
                   />
@@ -91,7 +100,7 @@ export function Footer() {
               <div className="items-center box-border caret-transparent flex flex-col justify-between min-h-[auto] min-w-[auto] w-36">
                 <div className="box-border caret-transparent min-h-[auto] min-w-[auto]">
                   <img
-                    src="https://c.animaapp.com/mnnx669pIjQjBB/assets/bbb.svg"
+                    src="/bbb.svg"
                     alt="bbb logo"
                     className="box-border caret-transparent inline h-[30px] max-w-full"
                   />
@@ -114,11 +123,13 @@ export function Footer() {
                   title={social.title}
                   className={social.className}
                 >
-                  <img
-                    src={social.iconSrc}
-                    alt={social.alt}
-                    className="box-border caret-transparent inline h-5 w-5"
-                  />
+                  {socialIconMap[social.id] ?? (
+                    <img
+                      src={social.iconSrc}
+                      alt={social.alt}
+                      className="box-border caret-transparent inline h-5 w-5"
+                    />
+                  )}
                 </a>
               ))}
             </div>
@@ -207,7 +218,7 @@ export function Footer() {
                 </div>
                 <div className="box-border caret-transparent mt-6">
                   <img
-                    src="https://c.animaapp.com/mnnx669pIjQjBB/assets/fmcsa-logo-f.webp"
+                    src="/fmcsa-logo-f.svg"
                     alt="fmcsa-logo"
                     className="box-border caret-transparent inline max-w-[220px]"
                   />

@@ -12,14 +12,14 @@ export function TrustBadgesSection() {
                   <div className="items-center box-border caret-transparent gap-x-[30px] flex pointer-events-none gap-y-[30px] md:pointer-events-auto">
                     <div className="box-border caret-transparent min-h-[auto] min-w-[auto] pointer-events-none md:pointer-events-auto">
                       <img
-                        src="https://c.animaapp.com/mnnx669pIjQjBB/assets/dot.webp"
+                        src="/dot.svg"
                         alt="dot logo"
                         className="box-border caret-transparent inline grayscale-[1] max-h-16 max-w-full pointer-events-none md:pointer-events-auto"
                       />
                     </div>
                     <div className="box-border caret-transparent min-h-[auto] min-w-[auto] pointer-events-none md:pointer-events-auto">
                       <img
-                        src="https://c.animaapp.com/mnnx669pIjQjBB/assets/fmcsa.webp"
+                        src="/fmcsa.svg"
                         alt="fmcsa logo"
                         className="box-border caret-transparent inline grayscale-[1] max-h-16 max-w-full pointer-events-none md:pointer-events-auto"
                       />
@@ -74,14 +74,14 @@ export function TrustBadgesSection() {
                   <div className="items-center box-border caret-transparent gap-x-[30px] flex pointer-events-none gap-y-[30px] md:pointer-events-auto">
                     <div className="box-border caret-transparent min-h-[auto] min-w-[auto] pointer-events-none md:pointer-events-auto">
                       <img
-                        src="https://c.animaapp.com/mnnx669pIjQjBB/assets/dot.webp"
+                        src="/dot.svg"
                         alt="dot logo"
                         className="box-border caret-transparent inline grayscale-[1] max-h-16 max-w-full pointer-events-none md:pointer-events-auto"
                       />
                     </div>
                     <div className="box-border caret-transparent min-h-[auto] min-w-[auto] pointer-events-none md:pointer-events-auto">
                       <img
-                        src="https://c.animaapp.com/mnnx669pIjQjBB/assets/fmcsa.webp"
+                        src="/fmcsa.svg"
                         alt="fmcsa logo"
                         className="box-border caret-transparent inline grayscale-[1] max-h-16 max-w-full pointer-events-none md:pointer-events-auto"
                       />
@@ -93,7 +93,7 @@ export function TrustBadgesSection() {
                     <div className="items-center box-border caret-transparent flex flex-col justify-between min-h-0 min-w-0 pointer-events-none w-36 md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
                       <div className="box-border caret-transparent min-h-0 min-w-0 pointer-events-none md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
                         <img
-                          src="https://c.animaapp.com/mnnx669pIjQjBB/assets/google.svg"
+                          src="/google.svg"
                           alt="google logo"
                           className="box-border caret-transparent inline h-[30px] max-w-full pointer-events-none md:pointer-events-auto"
                         />
@@ -110,7 +110,7 @@ export function TrustBadgesSection() {
                     <div className="items-center box-border caret-transparent flex flex-col justify-between min-h-0 min-w-0 pointer-events-none w-36 md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
                       <div className="box-border caret-transparent min-h-0 min-w-0 pointer-events-none md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
                         <img
-                          src="https://c.animaapp.com/mnnx669pIjQjBB/assets/trustpilot.svg"
+                          src="/trustpilot.svg"
                           alt="trustpilot logo"
                           className="box-border caret-transparent inline h-[30px] max-w-full pointer-events-none md:pointer-events-auto"
                         />
@@ -127,7 +127,7 @@ export function TrustBadgesSection() {
                     <div className="items-center box-border caret-transparent flex flex-col justify-between min-h-0 min-w-0 pointer-events-none w-36 md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
                       <div className="box-border caret-transparent min-h-0 min-w-0 pointer-events-none md:min-h-[auto] md:min-w-[auto] md:pointer-events-auto">
                         <img
-                          src="https://c.animaapp.com/mnnx669pIjQjBB/assets/bbb.svg"
+                          src="/bbb.svg"
                           alt="bbb logo"
                           className="box-border caret-transparent inline h-[30px] max-w-full pointer-events-none md:pointer-events-auto"
                         />

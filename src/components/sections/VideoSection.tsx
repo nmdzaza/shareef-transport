@@ -1,4 +1,5 @@
 import React from "react";
+import { Play } from "lucide-react";
 
 export function VideoSection() {
   return (
@@ -13,15 +14,11 @@ export function VideoSection() {
             <div className="relative aspect-[9_/_16] bg-blue-950 box-border caret-transparent w-full">
               <img
                 alt="Shareef Transport Video"
-                src="https://c.animaapp.com/mnnx669pIjQjBB/assets/maxresdefault.jpg"
+                src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=640&q=80"
                 className="box-border caret-transparent inline h-full object-cover w-full"
               />
               <div className="absolute items-center bg-blue-950/80 box-border caret-transparent flex h-11 justify-center translate-x-[-50.0%] translate-y-[-50.0%] w-11 rounded-[50%] left-2/4 top-2/4 md:h-14 md:w-14">
-                <img
-                  src="https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-28.svg"
-                  alt="Icon"
-                  className="text-white box-border caret-transparent h-5 w-5 ml-0.5 md:h-6 md:w-6"
-                />
+                <Play className="text-white h-5 w-5 ml-0.5 md:h-6 md:w-6 fill-white" />
               </div>
             </div>
           </a>
@@ -33,15 +30,11 @@ export function VideoSection() {
             <div className="relative aspect-[9_/_16] bg-blue-950 box-border caret-transparent w-full">
               <img
                 alt="Shareef Transport Video"
-                src="https://c.animaapp.com/mnnx669pIjQjBB/assets/maxresdefault-1.jpg"
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=640&q=80"
                 className="box-border caret-transparent inline h-full object-cover w-full"
               />
               <div className="absolute items-center bg-blue-950/80 box-border caret-transparent flex h-11 justify-center translate-x-[-50.0%] translate-y-[-50.0%] w-11 rounded-[50%] left-2/4 top-2/4 md:h-14 md:w-14">
-                <img
-                  src="https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-28.svg"
-                  alt="Icon"
-                  className="text-white box-border caret-transparent h-5 w-5 ml-0.5 md:h-6 md:w-6"
-                />
+                <Play className="text-white h-5 w-5 ml-0.5 md:h-6 md:w-6 fill-white" />
               </div>
             </div>
           </a>
@@ -53,15 +46,11 @@ export function VideoSection() {
             <div className="relative aspect-[9_/_16] bg-blue-950 box-border caret-transparent w-full">
               <img
                 alt="Shareef Transport Video"
-                src="https://c.animaapp.com/mnnx669pIjQjBB/assets/maxresdefault-2.jpg"
+                src="https://images.unsplash.com/photo-1549924231-f129b911e442?w=640&q=80"
                 className="box-border caret-transparent inline h-full object-cover w-full"
               />
               <div className="absolute items-center bg-blue-950/80 box-border caret-transparent flex h-11 justify-center translate-x-[-50.0%] translate-y-[-50.0%] w-11 rounded-[50%] left-2/4 top-2/4 md:h-14 md:w-14">
-                <img
-                  src="https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-28.svg"
-                  alt="Icon"
-                  className="text-white box-border caret-transparent h-5 w-5 ml-0.5 md:h-6 md:w-6"
-                />
+                <Play className="text-white h-5 w-5 ml-0.5 md:h-6 md:w-6 fill-white" />
               </div>
             </div>
           </a>

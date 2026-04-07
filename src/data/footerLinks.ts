@@ -128,7 +128,7 @@ export const socialLinks = [
     id: "facebook",
     href: "https://www.facebook.com/shareeftransport",
     title: "Shareef Transport Facebook Page",
-    iconSrc: "https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-32.svg",
+    iconSrc: "/icon-32.svg",
     alt: "Icon",
     className:
       "text-white text-xl box-border caret-transparent block leading-[30px] min-h-[auto] min-w-[auto]",
@@ -137,7 +137,7 @@ export const socialLinks = [
     id: "instagram",
     href: "https://www.instagram.com/shareeftransport",
     title: "Shareef Transport Instagram Page",
-    iconSrc: "https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-33.svg",
+    iconSrc: "/icon-33.svg",
     alt: "Icon",
     className:
       "text-white text-xl box-border caret-transparent block leading-[30px] min-h-[auto] min-w-[auto] ml-6",
@@ -146,7 +146,7 @@ export const socialLinks = [
     id: "twitter",
     href: "https://twitter.com/shareeftransport",
     title: "Shareef Transport Twitter Page",
-    iconSrc: "https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-34.svg",
+    iconSrc: "/icon-34.svg",
     alt: "Icon",
     className:
       "text-white text-xl box-border caret-transparent block leading-[30px] min-h-[auto] min-w-[auto] ml-6",
@@ -155,7 +155,7 @@ export const socialLinks = [
     id: "youtube",
     href: "https://www.youtube.com/shareeftransport",
     title: "Shareef Transport YouTube Channel",
-    iconSrc: "https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-35.svg",
+    iconSrc: "/icon-35.svg",
     alt: "Icon",
     className:
       "text-white text-xl box-border caret-transparent block leading-[30px] min-h-[auto] min-w-[auto] ml-6",
@@ -164,7 +164,7 @@ export const socialLinks = [
     id: "linkedin",
     href: "https://www.linkedin.com/company/shareeftransport",
     title: "Shareef Transport LinkedIn Page",
-    iconSrc: "https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-36.svg",
+    iconSrc: "/icon-36.svg",
     alt: "Icon",
     className:
       "text-white text-xl box-border caret-transparent block leading-[30px] min-h-[auto] min-w-[auto] ml-6",

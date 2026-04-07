@@ -1,4 +1,5 @@
 import React from "react";
+import { Star, ArrowRight } from "lucide-react";
 import { testimonials } from "../../data/testimonials";
 
 export function TestimonialsSection() {
@@ -25,7 +26,7 @@ export function TestimonialsSection() {
                   <div className="items-start box-border caret-transparent flex h-[70px] mb-4">
                     <div className="box-border caret-transparent min-h-[auto] min-w-[auto] mr-4">
                       <img
-                        src="https://c.animaapp.com/mnnx669pIjQjBB/assets/quote.svg"
+                        src="/quote.svg"
                         alt="quote-icon"
                         className="box-border caret-transparent inline max-w-full"
                       />
@@ -54,37 +55,16 @@ export function TestimonialsSection() {
                     </div>
                     <div className="box-border caret-transparent min-h-[auto] min-w-[auto] text-right">
                       <div className="text-yellow-400 box-border caret-transparent flex justify-end mt-2 mb-1">
-                        <img
-                          src="https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-31.svg"
-                          alt="Icon"
-                          className="text-yellow-400 box-border caret-transparent h-4 w-4"
-                        />
-                        <img
-                          src="https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-31.svg"
-                          alt="Icon"
-                          className="text-yellow-400 box-border caret-transparent h-4 w-4"
-                        />
-                        <img
-                          src="https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-31.svg"
-                          alt="Icon"
-                          className="text-yellow-400 box-border caret-transparent h-4 w-4"
-                        />
-                        <img
-                          src="https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-31.svg"
-                          alt="Icon"
-                          className="text-yellow-400 box-border caret-transparent h-4 w-4"
-                        />
-                        <img
-                          src="https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-31.svg"
-                          alt="Icon"
-                          className="text-yellow-400 box-border caret-transparent h-4 w-4"
-                        />
+                        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                       </div>
                       <div className="box-border caret-transparent">
-                        <img
-                          alt={testimonial.logoAlt}
-                          className="box-border caret-transparent inline max-w-full"
-                        />
+                        <span className="text-xs text-neutral-400 font-medium">
+                          {testimonial.logoAlt === "google-logo" ? "Google" : testimonial.logoAlt}
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -104,11 +84,7 @@ export function TestimonialsSection() {
                 className="text-blue-500 text-[16.4683px] font-bold items-center box-border caret-transparent flex justify-center leading-[27px]"
               >
                 Read More Reviews
-                <img
-                  src="https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-29.svg"
-                  alt="Icon"
-                  className="box-border caret-transparent h-4 w-4 ml-2.5"
-                />
+                <ArrowRight className="box-border caret-transparent h-4 w-4 ml-2.5" />
               </a>
             </div>
           </div>

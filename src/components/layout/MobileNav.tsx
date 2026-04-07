@@ -1,13 +1,30 @@
 import React, { useState } from "react";
+import { Menu, X, Phone, Calculator } from "lucide-react";
 import {
   transportOptions,
   whoWeServeOptions,
-  mobileNavLinks,
 } from "../../data/navigation";
 
+function scrollTo(id: string) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: "smooth" });
+}
+
 export function MobileNav() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const [transportOpen, setTransportOpen] = useState(false);
   const [whoWeServeOpen, setWhoWeServeOpen] = useState(false);
+
+  const closeAll = () => {
+    setMenuOpen(false);
+    setTransportOpen(false);
+    setWhoWeServeOpen(false);
+  };
+
+  const handleAnchorClick = (id: string) => {
+    closeAll();
+    setTimeout(() => scrollTo(id), 100);
+  };
 
   return (
     <nav className="fixed bg-white border-b-sky-100 border-l-neutral-800 border-r-neutral-800 border-t-neutral-800 shadow-[rgba(0,0,0,0.1)_7px_7px_13px_0px] box-border caret-transparent block flex-wrap list-none w-full z-[10000] border-b top-0 md:hidden">
@@ -16,38 +33,31 @@ export function MobileNav() {
           <div className="box-border caret-transparent min-h-[auto] min-w-[auto] md:min-h-0 md:min-w-0">
             <a href="/" className="text-blue-600 box-border caret-transparent">
               <img
-                src="https://c.animaapp.com/mnnx669pIjQjBB/assets/nexus-logo-navy.svg"
+                src="/logo.svg"
                 alt="Shareef Transport logo"
                 className="box-border caret-transparent inline h-10 max-w-full"
               />
             </a>
           </div>
-          <a
-            href="/car-shipping-calculator/"
-            title="Cost Calculator"
-            className="text-blue-600 box-border caret-transparent flex flex-col min-h-[auto] min-w-[auto] md:min-h-0 md:min-w-0"
+          <button
+            type="button"
+            onClick={() => handleAnchorClick("quote")}
+            title="Get a Quote"
+            className="text-blue-600 box-border caret-transparent flex flex-col items-center min-h-[auto] min-w-[auto] md:min-h-0 md:min-w-0 bg-transparent border-0 p-0 cursor-pointer"
           >
-            <img
-              src="https://c.animaapp.com/mnnx669pIjQjBB/assets/calculator.svg"
-              alt="calculator-logo"
-              className="box-border caret-transparent max-h-[22px] min-h-[auto] min-w-[auto] md:min-h-0 md:min-w-0"
-            />
+            <Calculator className="h-[22px] w-[22px] text-blue-600" />
             <span className="text-slate-400 text-xs font-semibold box-border caret-transparent block leading-[14.4px] min-h-[auto] min-w-[auto] text-center mt-1.5 md:min-h-0 md:min-w-0">
               Cost
               <br className="box-border caret-transparent" />
               Calculator
             </span>
-          </a>
+          </button>
           <a
-            href="tel://6025550100"
+            href="tel:6025550100"
             title="Call Now"
-            className="text-blue-600 box-border caret-transparent flex flex-col min-h-[auto] min-w-[auto] md:min-h-0 md:min-w-0"
+            className="text-blue-600 box-border caret-transparent flex flex-col items-center min-h-[auto] min-w-[auto] md:min-h-0 md:min-w-0"
           >
-            <img
-              src="https://c.animaapp.com/mnnx669pIjQjBB/assets/headset.svg"
-              alt="headset-icon"
-              className="box-border caret-transparent max-h-[22px] min-h-[auto] min-w-[auto] md:min-h-0 md:min-w-0"
-            />
+            <Phone className="h-[22px] w-[22px] text-blue-600" />
             <span className="text-slate-400 text-xs font-semibold box-border caret-transparent block leading-[14.4px] min-h-[auto] min-w-[auto] text-center mt-1.5 md:min-h-0 md:min-w-0">
               Call
               <br className="box-border caret-transparent" />
@@ -57,107 +67,147 @@ export function MobileNav() {
           <button
             type="button"
             aria-label="Toggle navigation"
-            className="relative bg-transparent caret-transparent flex flex-col justify-center leading-4 min-h-[auto] min-w-[auto] text-center p-0 md:min-h-0 md:min-w-0"
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="relative bg-transparent caret-transparent flex flex-col justify-center leading-4 min-h-[auto] min-w-[auto] text-center p-2 md:min-h-0 md:min-w-0 border-0 cursor-pointer"
           >
-            <img
-              src="https://c.animaapp.com/mnnx669pIjQjBB/assets/mobile-menu-line.svg"
-              alt="mobile-menu-line"
-              className="relative box-border caret-transparent min-h-[auto] min-w-[auto] my-1 md:min-h-0 md:min-w-0"
-            />
-            <img
-              src="https://c.animaapp.com/mnnx669pIjQjBB/assets/mobile-menu-line.svg"
-              alt="mobile-menu-line"
-              className="relative box-border caret-transparent min-h-[auto] min-w-[auto] my-1 md:min-h-0 md:min-w-0"
-            />
+            {menuOpen ? (
+              <X className="h-6 w-6 text-blue-950" />
+            ) : (
+              <Menu className="h-6 w-6 text-blue-950" />
+            )}
           </button>
         </div>
       </div>
-      <div className="items-center box-border caret-transparent hidden basis-full grow">
-        <ul className="bg-sky-900 box-border caret-transparent flex flex-col h-[1000px] mr-auto p-6">
-          <li className="box-border caret-transparent mb-6">
-            <a
-              href="/how-it-works/"
-              title="How it works"
-              className="text-white font-medium box-border caret-transparent px-6"
-            >
-              How it works
-            </a>
-          </li>
-          <li className="box-border caret-transparent mb-6">
-            <button
-              type="button"
-              className="text-white bg-transparent caret-transparent text-left w-full px-6 py-0"
-              onClick={() => setTransportOpen(!transportOpen)}
-            >
-              Transport Options
-              <img
-                src="https://c.animaapp.com/mnnx669pIjQjBB/assets/caret-white.svg"
-                alt="caret-white"
-                className="box-border caret-transparent inline ml-1"
-              />
-            </button>
-            <ul className="box-border caret-transparent hidden list-[circle] mt-3 pl-8">
-              {transportOptions.map((item) => (
-                <li
-                  key={item.id}
-                  className="box-border caret-transparent mb-1.5"
-                >
-                  <a
-                    href={item.href}
-                    title={item.title}
-                    className="text-white font-medium box-border caret-transparent"
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </li>
-          <li className="box-border caret-transparent mb-6">
-            <button
-              type="button"
-              className="text-white bg-transparent caret-transparent text-left w-full px-6 py-0"
-              onClick={() => setWhoWeServeOpen(!whoWeServeOpen)}
-            >
-              Who We Serve
-              <img
-                src="https://c.animaapp.com/mnnx669pIjQjBB/assets/caret-white.svg"
-                alt="caret-white"
-                className="box-border caret-transparent inline ml-1"
-              />
-            </button>
-            <ul className="box-border caret-transparent hidden list-[circle] mt-3 pl-8">
-              {whoWeServeOptions.map((item) => (
-                <li
-                  key={item.id}
-                  className="box-border caret-transparent mb-1.5"
-                >
-                  <a
-                    href={item.href}
-                    title={item.title}
-                    className="text-white font-medium box-border caret-transparent"
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </li>
-          {mobileNavLinks
-            .filter((l) => !["how-it-works"].includes(l.id))
-            .map((item) => (
-              <li key={item.id} className="box-border caret-transparent mb-6">
-                <a
-                  href={item.href}
-                  title={item.title}
-                  className="text-white font-medium box-border caret-transparent px-6"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-        </ul>
-      </div>
+      {menuOpen && (
+        <div className="items-center box-border caret-transparent basis-full grow">
+          <ul className="bg-sky-900 box-border caret-transparent flex flex-col mr-auto p-6">
+            <li className="box-border caret-transparent mb-6">
+              <button
+                type="button"
+                onClick={() => handleAnchorClick("home")}
+                className="text-white font-medium bg-transparent border-0 text-left px-6 py-0 w-full cursor-pointer"
+              >
+                Home
+              </button>
+            </li>
+            <li className="box-border caret-transparent mb-6">
+              <button
+                type="button"
+                onClick={() => handleAnchorClick("quote")}
+                className="text-white font-medium bg-transparent border-0 text-left px-6 py-0 w-full cursor-pointer"
+              >
+                Get a Quote
+              </button>
+            </li>
+            <li className="box-border caret-transparent mb-6">
+              <button
+                type="button"
+                onClick={() => handleAnchorClick("services")}
+                className="text-white font-medium bg-transparent border-0 text-left px-6 py-0 w-full cursor-pointer"
+              >
+                Services
+              </button>
+            </li>
+            <li className="box-border caret-transparent mb-6">
+              <button
+                type="button"
+                className="text-white bg-transparent border-0 caret-transparent text-left w-full px-6 py-0 cursor-pointer"
+                onClick={() => setTransportOpen(!transportOpen)}
+              >
+                Transport Options
+                <span className="inline ml-1">{transportOpen ? "▲" : "▼"}</span>
+              </button>
+              {transportOpen && (
+                <ul className="box-border caret-transparent list-[circle] mt-3 pl-8">
+                  {transportOptions.map((item) => (
+                    <li key={item.id} className="box-border caret-transparent mb-1.5">
+                      <a
+                        href={item.href}
+                        title={item.title}
+                        className="text-white font-medium box-border caret-transparent"
+                        onClick={closeAll}
+                      >
+                        {item.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+            <li className="box-border caret-transparent mb-6">
+              <button
+                type="button"
+                className="text-white bg-transparent border-0 caret-transparent text-left w-full px-6 py-0 cursor-pointer"
+                onClick={() => setWhoWeServeOpen(!whoWeServeOpen)}
+              >
+                Who We Serve
+                <span className="inline ml-1">{whoWeServeOpen ? "▲" : "▼"}</span>
+              </button>
+              {whoWeServeOpen && (
+                <ul className="box-border caret-transparent list-[circle] mt-3 pl-8">
+                  {whoWeServeOptions.map((item) => (
+                    <li key={item.id} className="box-border caret-transparent mb-1.5">
+                      <a
+                        href={item.href}
+                        title={item.title}
+                        className="text-white font-medium box-border caret-transparent"
+                        onClick={closeAll}
+                      >
+                        {item.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+            <li className="box-border caret-transparent mb-6">
+              <button
+                type="button"
+                onClick={() => handleAnchorClick("about")}
+                className="text-white font-medium bg-transparent border-0 text-left px-6 py-0 w-full cursor-pointer"
+              >
+                About Us
+              </button>
+            </li>
+            <li className="box-border caret-transparent mb-6">
+              <button
+                type="button"
+                onClick={() => handleAnchorClick("testimonials")}
+                className="text-white font-medium bg-transparent border-0 text-left px-6 py-0 w-full cursor-pointer"
+              >
+                Testimonials
+              </button>
+            </li>
+            <li className="box-border caret-transparent mb-6">
+              <button
+                type="button"
+                onClick={() => handleAnchorClick("faq")}
+                className="text-white font-medium bg-transparent border-0 text-left px-6 py-0 w-full cursor-pointer"
+              >
+                FAQ
+              </button>
+            </li>
+            <li className="box-border caret-transparent mb-6">
+              <button
+                type="button"
+                onClick={() => handleAnchorClick("contact")}
+                className="text-white font-medium bg-transparent border-0 text-left px-6 py-0 w-full cursor-pointer"
+              >
+                Contact
+              </button>
+            </li>
+            <li className="box-border caret-transparent mb-2">
+              <a
+                href="tel:6025550100"
+                className="text-lime-300 font-bold px-6 text-lg"
+                onClick={closeAll}
+              >
+                (602) 555-0100
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Mail, MessageSquare, Phone } from "lucide-react";
 
 export function ReasonsSection() {
   return (
@@ -157,7 +158,7 @@ export function ReasonsSection() {
                 <div className="box-border caret-transparent basis-[60px] min-h-[auto] min-w-[auto]">
                   <img
                     alt="step-icon-1"
-                    src="https://c.animaapp.com/mnnx669pIjQjBB/assets/1.svg"
+                    src="/step-1.svg"
                     className="box-border caret-transparent inline"
                   />
                 </div>
@@ -180,7 +181,7 @@ export function ReasonsSection() {
                 <div className="box-border caret-transparent basis-[60px] min-h-[auto] min-w-[auto]">
                   <img
                     alt="step-icon-2"
-                    src="https://c.animaapp.com/mnnx669pIjQjBB/assets/2.svg"
+                    src="/step-2.svg"
                     className="box-border caret-transparent inline"
                   />
                 </div>
@@ -216,7 +217,7 @@ export function ReasonsSection() {
                 <div className="box-border caret-transparent basis-[60px] min-h-[auto] min-w-[auto]">
                   <img
                     alt="step-icon-3"
-                    src="https://c.animaapp.com/mnnx669pIjQjBB/assets/3.svg"
+                    src="/step-3.svg"
                     className="box-border caret-transparent inline"
                   />
                 </div>
@@ -271,12 +272,8 @@ export function ReasonsSection() {
                 />
                 <div className="box-border caret-transparent">
                   <div className="box-border caret-transparent mb-6">
-                    <label className="text-blue-950 text-sm font-bold box-border caret-transparent inline-block leading-[26px]">
-                      <img
-                        src="https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-30.svg"
-                        alt="Icon"
-                        className="text-slate-400 box-border caret-transparent inline h-4 w-4 mr-1"
-                      />
+                    <label className="text-blue-950 text-sm font-bold box-border caret-transparent inline-flex items-center leading-[26px] gap-1">
+                      <Mail className="h-4 w-4 text-slate-400" />
                       Email
                     </label>
                     <input
@@ -287,12 +284,8 @@ export function ReasonsSection() {
                     />
                   </div>
                   <div className="box-border caret-transparent mb-6">
-                    <label className="text-blue-950 text-sm font-bold box-border caret-transparent inline-block leading-[26px]">
-                      <img
-                        src="https://c.animaapp.com/mnnx669pIjQjBB/assets/icon-30.svg"
-                        alt="Icon"
-                        className="text-slate-400 box-border caret-transparent inline h-4 w-4 mr-1"
-                      />
+                    <label className="text-blue-950 text-sm font-bold box-border caret-transparent inline-flex items-center leading-[26px] gap-1">
+                      <MessageSquare className="h-4 w-4 text-slate-400" />
                       Message
                     </label>
                     <textarea
@@ -310,11 +303,7 @@ export function ReasonsSection() {
                       title="call Shareef Transport"
                       className="text-blue-500 box-border caret-transparent block basis-[47%] min-h-[auto] min-w-[auto] text-center align-middle border px-3 py-1.5 rounded-md border-solid border-transparent"
                     >
-                      <img
-                        src="https://c.animaapp.com/mnnx669pIjQjBB/assets/headphones.svg"
-                        alt="headphone icon"
-                        className="box-border caret-transparent inline mr-4"
-                      />
+                      <Phone className="inline h-5 w-5 mr-2" />
                       (602) 555-0100
                     </a>
                   </div>
