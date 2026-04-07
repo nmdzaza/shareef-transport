@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { Menu, X, Phone, Calculator } from "lucide-react";
 import {
   transportOptions,
@@ -14,6 +15,7 @@ export function MobileNav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [transportOpen, setTransportOpen] = useState(false);
   const [whoWeServeOpen, setWhoWeServeOpen] = useState(false);
+  const navigate = useNavigate();
 
   const closeAll = () => {
     setMenuOpen(false);
@@ -23,7 +25,30 @@ export function MobileNav() {
 
   const handleAnchorClick = (id: string) => {
     closeAll();
-    setTimeout(() => scrollTo(id), 100);
+    // Navigate to home first if not already there, then scroll to section
+    if (window.location.hash && !window.location.hash.startsWith("#/") || window.location.hash.length <= 1) {
+      setTimeout(() => scrollTo(id), 100);
+    } else {
+      navigate("/");
+      setTimeout(() => scrollTo(id), 200);
+    }
+  };
+
+  // Handle dropdown items that use section anchors (e.g. #services, #quote)
+  const handleDropdownItemClick = (href: string) => {
+    closeAll();
+    if (href.startsWith("#/")) {
+      // Route navigation — let the browser handle via href
+      return;
+    }
+    // Section anchor — strip the leading # and scroll after navigating home
+    const sectionId = href.replace(/^#/, "");
+    if (window.location.hash.startsWith("#/") && window.location.hash !== "#/") {
+      navigate("/");
+      setTimeout(() => scrollTo(sectionId), 200);
+    } else {
+      scrollTo(sectionId);
+    }
   };
 
   return (
@@ -31,13 +56,13 @@ export function MobileNav() {
       <div className="box-border caret-transparent max-w-none w-full mx-auto px-3 md:max-w-[1140px]">
         <div className="items-center box-border caret-transparent inline-flex justify-between w-full py-2.5">
           <div className="box-border caret-transparent min-h-[auto] min-w-[auto] md:min-h-0 md:min-w-0">
-            <a href="#" className="text-blue-600 box-border caret-transparent">
+            <Link to="/" className="text-blue-600 box-border caret-transparent">
               <img
                 src={import.meta.env.BASE_URL + "logo.svg"}
                 alt="Shareef Transport logo"
                 className="box-border caret-transparent inline h-10 max-w-full"
               />
-            </a>
+            </Link>
           </div>
           <button
             type="button"
@@ -121,14 +146,25 @@ export function MobileNav() {
                 <ul className="box-border caret-transparent list-[circle] mt-3 pl-8">
                   {transportOptions.map((item) => (
                     <li key={item.id} className="box-border caret-transparent mb-1.5">
-                      <a
-                        href={item.href}
-                        title={item.title}
-                        className="text-white font-medium box-border caret-transparent"
-                        onClick={closeAll}
-                      >
-                        {item.label}
-                      </a>
+                      {item.href.startsWith("#/") ? (
+                        <a
+                          href={item.href}
+                          title={item.title}
+                          className="text-white font-medium box-border caret-transparent"
+                          onClick={closeAll}
+                        >
+                          {item.label}
+                        </a>
+                      ) : (
+                        <button
+                          type="button"
+                          title={item.title}
+                          className="text-white font-medium bg-transparent border-0 p-0 cursor-pointer box-border caret-transparent"
+                          onClick={() => handleDropdownItemClick(item.href)}
+                        >
+                          {item.label}
+                        </button>
+                      )}
                     </li>
                   ))}
                 </ul>

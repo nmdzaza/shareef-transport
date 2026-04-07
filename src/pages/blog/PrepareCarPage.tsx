@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Header } from "../../components/layout/Header";
 import { Footer } from "../../components/layout/Footer";
@@ -8,6 +9,10 @@ const PHONE = "(602) 555-0100";
 export default function PrepareCarPage() {
   return (
     <div className="text-neutral-800 text-base font-normal bg-white font-montserrat">
+      <Helmet>
+        <title>5 Tips for Preparing Your Car for Shipping | Shareef Transport</title>
+        <meta name="description" content="A clean car, a quarter tank of gas, photos from every angle — prep your vehicle the right way before the carrier arrives with this step-by-step checklist." />
+      </Helmet>
       <Header />
       <main role="main" className="mt-[75px] md:mt-40">
         {/* Hero */}

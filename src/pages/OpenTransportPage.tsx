@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { DesktopNav } from "../components/layout/DesktopNav";
 import { MobileNav } from "../components/layout/MobileNav";
 import { Footer } from "../components/layout/Footer";
@@ -197,6 +198,10 @@ function ShippingForm() {
 export default function OpenTransportPage() {
   return (
     <div className="text-sky-900 text-base font-normal bg-white font-montserrat">
+      <Helmet>
+        <title>Open Auto Transport | Affordable Car Shipping | Shareef Transport</title>
+        <meta name="description" content="Affordable open car hauler service nationwide. Book your vehicle transport today." />
+      </Helmet>
       <MobileNav />
       <DesktopNav />
 

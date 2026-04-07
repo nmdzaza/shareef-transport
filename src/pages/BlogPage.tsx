@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Header } from "../components/layout/Header";
 import { Footer } from "../components/layout/Footer";
@@ -197,6 +198,10 @@ function BlogCard({ post, isFirst }: { post: BlogPost; isFirst: boolean }) {
 export default function BlogPage() {
   return (
     <div className="text-neutral-800 text-base font-normal bg-white font-montserrat">
+      <Helmet>
+        <title>Shareef Transport Blog | Car Shipping Tips &amp; Guides</title>
+        <meta name="description" content="Expert car shipping tips, cost guides, and transport advice from Shareef Transport." />
+      </Helmet>
       <Header />
       <main role="main" className="mt-[75px] md:mt-40">
         <section className="pt-[30px] md:pt-0">

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 export function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
   const [form, setForm] = useState({
     name: "",
     phone: "",
@@ -18,9 +19,28 @@ export function ContactSection() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSending(true);
+    const response = await fetch("https://formspree.io/f/xjkwdqrn", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: form.name,
+        phone: form.phone,
+        email: form.email,
+        message: form.message,
+        pickupLocation: form.originZip,
+        deliveryLocation: form.destinationZip,
+        vehicleType: form.vehicleType,
+      }),
+    });
+    setSending(false);
+    if (response.ok) {
+      setSubmitted(true);
+    } else {
+      alert("There was an error. Please try again or call us directly.");
+    }
   };
 
   return (
@@ -149,9 +169,10 @@ export function ContactSection() {
 
             <button
               type="submit"
-              className="text-blue-950 font-bold bg-lime-300 text-center py-4 rounded-lg mt-2 hover:bg-lime-400 transition-colors"
+              disabled={sending}
+              className="text-blue-950 font-bold bg-lime-300 text-center py-4 rounded-lg mt-2 hover:bg-lime-400 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              Send My Request
+              {sending ? "Sending..." : "Send My Request"}
             </button>
           </form>
         )}

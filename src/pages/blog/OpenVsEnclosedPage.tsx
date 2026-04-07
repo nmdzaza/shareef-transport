@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Header } from "../../components/layout/Header";
 import { Footer } from "../../components/layout/Footer";
@@ -8,6 +9,10 @@ const PHONE = "(602) 555-0100";
 export default function OpenVsEnclosedPage() {
   return (
     <div className="text-neutral-800 text-base font-normal bg-white font-montserrat">
+      <Helmet>
+        <title>Open vs Enclosed Car Transport: Which Should You Choose? | Shareef Transport</title>
+        <meta name="description" content="Open transport is cheaper and faster. Enclosed protects luxury and classic cars. Here's exactly when to use each and what the cost difference looks like." />
+      </Helmet>
       <Header />
       <main role="main" className="mt-[75px] md:mt-40">
         {/* Hero */}

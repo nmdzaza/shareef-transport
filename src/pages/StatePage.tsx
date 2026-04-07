@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
 import { Header } from "../components/layout/Header";
 // StatePage: renders a state-specific car shipping page based on URL slug
@@ -168,6 +169,10 @@ export default function StatePage() {
 
   return (
     <div className="text-neutral-800 text-base font-normal bg-white font-montserrat">
+      <Helmet>
+        <title>{stateName} Car Shipping | Shareef Transport</title>
+        <meta name="description" content={`Reliable car shipping to and from ${stateName}. Get a free quote from Shareef Transport for open and enclosed auto transport.`} />
+      </Helmet>
       <Header />
       <main role="main" className="mt-[75px] md:mt-40">
         {/* State Hero Banner */}

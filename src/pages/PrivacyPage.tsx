@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Header } from "../components/layout/Header";
 import { Footer } from "../components/layout/Footer";
 
@@ -965,6 +966,10 @@ function PrivacyPolicyContent() {
 export default function PrivacyPage() {
   return (
     <div className="text-neutral-800 text-base font-normal bg-white font-montserrat">
+      <Helmet>
+        <title>Privacy Policy | Shareef Transport</title>
+        <meta name="description" content="Read the privacy policy for Shareef Transport vehicle shipping services." />
+      </Helmet>
       <Header />
       <div className="mt-[75px] md:mt-40">
         <section className="pt-[30px] md:pt-0">

@@ -8,7 +8,7 @@ const posts = [
     image: import.meta.env.BASE_URL + "blog-cost-guide.jpg",
     date: "March 15, 2026",
     readTime: "5 min read",
-    href: "#",
+    href: "#/blog/how-much-does-it-cost-to-ship-a-car",
   },
   {
     title: "Open vs Enclosed Car Transport: Which Should You Choose?",
@@ -17,7 +17,7 @@ const posts = [
     image: import.meta.env.BASE_URL + "blog-open-transport.jpg",
     date: "March 8, 2026",
     readTime: "4 min read",
-    href: "#",
+    href: "#/blog/open-vs-enclosed-car-transport",
   },
   {
     title: "5 Tips for Preparing Your Car for Shipping",
@@ -26,7 +26,7 @@ const posts = [
     image: import.meta.env.BASE_URL + "blog-enclosed-transport.jpg",
     date: "February 28, 2026",
     readTime: "3 min read",
-    href: "#",
+    href: "#/blog/5-tips-preparing-car-for-shipping",
   },
 ];
 

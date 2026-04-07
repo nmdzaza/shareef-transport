@@ -1,10 +1,15 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Header } from "../components/layout/Header";
 import { Footer } from "../components/layout/Footer";
 
 export default function TermsPage() {
   return (
     <div className="text-neutral-800 text-base font-normal bg-white font-montserrat">
+      <Helmet>
+        <title>Terms and Conditions | Shareef Transport</title>
+        <meta name="description" content="Read the terms and conditions for using Shareef Transport vehicle shipping services." />
+      </Helmet>
       <Header />
       <main
       role="main"

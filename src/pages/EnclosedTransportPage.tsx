@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { DesktopNav } from "../components/layout/DesktopNav";
 import { MobileNav } from "../components/layout/MobileNav";
 import { Footer } from "../components/layout/Footer";
@@ -245,6 +246,10 @@ function ShippingForm() {
 export default function EnclosedTransportPage() {
   return (
     <div className="text-sky-900 text-base font-normal bg-white font-montserrat">
+      <Helmet>
+        <title>Enclosed Auto Transport | Shareef Transport</title>
+        <meta name="description" content="Premium enclosed car transport for luxury, classic, and high-value vehicles. Get a free quote." />
+      </Helmet>
       <MobileNav />
       <DesktopNav />
 

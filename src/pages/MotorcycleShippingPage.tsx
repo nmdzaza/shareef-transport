@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Header } from "../components/layout/Header";
 import { Footer } from "../components/layout/Footer";
@@ -9,6 +10,10 @@ const COMPANY = "Shareef Transport";
 export default function MotorcycleShippingPage() {
   return (
     <div className="text-neutral-800 text-base font-normal bg-white font-montserrat">
+      <Helmet>
+        <title>Motorcycle Shipping | Shareef Transport</title>
+        <meta name="description" content="Safe, reliable motorcycle shipping nationwide. Open and enclosed options available." />
+      </Helmet>
       <Header />
 
       {/* Hero */}

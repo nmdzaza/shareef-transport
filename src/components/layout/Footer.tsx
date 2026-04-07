@@ -64,34 +64,30 @@ export function Footer() {
       <section className="box-border caret-transparent w-full mt-[90px] mx-auto px-3">
         <div className="box-border caret-transparent flex flex-wrap -mx-3">
           <div className="items-stretch box-border caret-transparent flex shrink-0 max-w-full min-h-[auto] min-w-[auto] w-full mt-10 md:mt-0">
-            <a
+            <div
               title="See Image"
-              href="#"
               className="relative text-blue-600 box-border caret-transparent hidden grayscale-[0.6] grow-[2] h-[300px] min-h-0 min-w-0 overflow-hidden md:block md:min-h-[auto] md:min-w-[auto] before:accent-auto before:bg-[linear-gradient(rgb(250,251,252)_0px,rgba(0,212,251,0)_81%)] before:box-border before:caret-transparent before:text-blue-600 before:block before:text-base before:not-italic before:normal-nums before:font-normal before:h-[225px] before:tracking-[normal] before:leading-6 before:list-outside before:list-disc before:pointer-events-auto before:absolute before:text-start before:no-underline before:indent-[0px] before:normal-case before:visible before:w-full before:z-[1] before:border-separate before:font-montserrat"
             >
               <div className="relative bg-[url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80')] bg-no-repeat bg-cover box-border caret-transparent h-full bg-center"></div>
-            </a>
-            <a
+            </div>
+            <div
               title="See Image"
-              href="#"
               className="relative text-blue-600 box-border caret-transparent block grayscale-[0.6] grow-[2] h-[300px] min-h-[auto] min-w-[auto] overflow-hidden before:accent-auto before:bg-[linear-gradient(rgb(250,251,252)_0px,rgba(0,212,251,0)_81%)] before:box-border before:caret-transparent before:text-blue-600 before:block before:text-base before:not-italic before:normal-nums before:font-normal before:h-[225px] before:tracking-[normal] before:leading-6 before:list-outside before:list-disc before:pointer-events-auto before:absolute before:text-start before:no-underline before:indent-[0px] before:normal-case before:visible before:w-full before:z-[1] before:border-separate before:font-montserrat"
             >
               <div className="relative bg-[url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80')] bg-no-repeat bg-cover box-border caret-transparent h-full bg-center"></div>
-            </a>
-            <a
+            </div>
+            <div
               title="See Image"
-              href="#"
               className="relative text-blue-600 box-border caret-transparent hidden grayscale-[0.6] grow-[2] h-[300px] min-h-0 min-w-0 overflow-hidden md:block md:min-h-[auto] md:min-w-[auto] before:accent-auto before:bg-[linear-gradient(rgb(250,251,252)_0px,rgba(0,212,251,0)_81%)] before:box-border before:caret-transparent before:text-blue-600 before:block before:text-base before:not-italic before:normal-nums before:font-normal before:h-[225px] before:tracking-[normal] before:leading-6 before:list-outside before:list-disc before:pointer-events-auto before:absolute before:text-start before:no-underline before:indent-[0px] before:normal-case before:visible before:w-full before:z-[1] before:border-separate before:font-montserrat"
             >
               <div className="relative bg-[url('https://images.unsplash.com/photo-1549924231-f129b911e442?w=800&q=80')] bg-no-repeat bg-cover box-border caret-transparent h-full bg-center"></div>
-            </a>
-            <a
+            </div>
+            <div
               title="See Image"
-              href="#"
               className="relative text-blue-600 box-border caret-transparent block grayscale-[0.6] grow-[2] h-[300px] min-h-[auto] min-w-[auto] overflow-hidden before:accent-auto before:bg-[linear-gradient(rgb(250,251,252)_0px,rgba(0,212,251,0)_81%)] before:box-border before:caret-transparent before:text-blue-600 before:block before:text-base before:not-italic before:normal-nums before:font-normal before:h-[225px] before:tracking-[normal] before:leading-6 before:list-outside before:list-disc before:pointer-events-auto before:absolute before:text-start before:no-underline before:indent-[0px] before:normal-case before:visible before:w-full before:z-[1] before:border-separate before:font-montserrat"
             >
               <div className="relative bg-[url('https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80')] bg-no-repeat bg-cover box-border caret-transparent h-full bg-center"></div>
-            </a>
+            </div>
           </div>
         </div>
       </section>

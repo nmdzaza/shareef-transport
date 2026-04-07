@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Header } from "../../components/layout/Header";
 import { Footer } from "../../components/layout/Footer";
@@ -87,6 +88,11 @@ function ArticleLayout({ children }: { children: React.ReactNode }) {
 
 export default function ShippingCostPage() {
   return (
+    <>
+    <Helmet>
+      <title>How Much Does It Cost to Ship a Car in 2026? | Shareef Transport</title>
+      <meta name="description" content="Distance, vehicle size, open vs. enclosed, fuel prices, and seasonal demand all affect your rate. Here's the full 2026 breakdown with real numbers." />
+    </Helmet>
     <ArticleLayout>
       <p className="text-xl text-slate-500 leading-relaxed mb-8">
         If you've never shipped a car before, the first question is almost always the same: <em>how much is this going to cost?</em> The honest answer is: it depends. But "it depends" isn't very useful, so here's everything you need to understand exactly what drives the price — and what you can do to keep it as low as possible.
@@ -183,5 +189,6 @@ export default function ShippingCostPage() {
         Shareef Transport provides free, transparent quotes with no hidden fees. Call <a href="tel:6025550100" className="text-blue-600 font-semibold hover:underline">{PHONE}</a> or use our online quote form to get your exact price in minutes.
       </p>
     </ArticleLayout>
+    </>
   );
 }
