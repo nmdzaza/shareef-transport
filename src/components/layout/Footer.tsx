@@ -32,26 +32,30 @@ export function Footer() {
     }
   };
 
+  const openChat = (message: string) => {
+    window.dispatchEvent(new CustomEvent("openChat", { detail: { message } }));
+  };
+
   const quickLinkItems = [
-    { label: "Car Shipping Calculator", action: () => goToSection("quote") },
+    { label: "Car Shipping Calculator", action: () => openChat("How does the car shipping calculator work? Give me a quick estimate.") },
     { label: "Moving Cost Calculator", action: () => goToSection("quote") },
     { label: "Car Value Calculator", action: () => goToSection("quote") },
-    { label: "How it works", action: () => goToSection("how-it-works") },
+    { label: "How it works", action: () => openChat("Walk me through how car shipping works step by step") },
     { label: "About Us", action: () => goToSection("about") },
     { label: "Contact", action: () => goToSection("contact") },
     { label: "Blog", routeTo: "/blog" },
-    { label: "Team", action: () => goToSection("about") },
-    { label: "Press", action: () => alert("Coming Soon!") },
-    { label: "Sitemap", action: () => alert("Coming Soon!") },
-    { label: "Help", action: () => goToSection("faq") },
+    { label: "Team", action: () => openChat("Tell me about the Shareef Transport team") },
+    { label: "Press", action: () => openChat("Do you have press info or media inquiries?") },
+    { label: "Sitemap", action: () => goToSection("quote") },
+    { label: "Help", action: () => openChat("I need help with my shipment") },
   ];
 
   const whoWeServeItems: { label: string; action: () => void }[] = [
-    { label: "Auto Auctions", action: () => goToSection("quote") },
-    { label: "Online Car Sellers", action: () => goToSection("quote") },
+    { label: "Auto Auctions", action: () => openChat("How does Shareef Transport work with auto auctions?") },
+    { label: "Online Car Sellers", action: () => openChat("I sold a car online and need to ship it. How does this work?") },
     { label: "Best Car Dealerships", action: () => goToSection("contact") },
-    { label: "Military Members", action: () => goToSection("quote") },
-    { label: "Car Relocation Services", action: () => goToSection("quote") },
+    { label: "Military Members", action: () => openChat("Do you offer military discounts for car shipping?") },
+    { label: "Car Relocation Services", action: () => openChat("I'm relocating and need to ship my car. What do I need to know?") },
   ];
 
   type TransportItem =
@@ -59,13 +63,13 @@ export function Footer() {
     | { label: string; routeTo: string; action?: never };
 
   const transportOptionItems: TransportItem[] = [
-    { label: "Door-to-Door Car Shipping", action: () => goToSection("services") },
+    { label: "Door-to-Door Car Shipping", action: () => openChat("Tell me about door-to-door car shipping service") },
     { label: "Motorcycle Shipping", routeTo: "/motorcycle-shipping" },
     { label: "Open Car Hauler", routeTo: "/open-auto-transport" },
     { label: "Enclosed Car Hauler", routeTo: "/enclosed-auto-transport" },
-    { label: "Expedited Car Shipping", action: () => goToSection("quote") },
-    { label: "Cross Country Car Shipping", action: () => goToSection("quote") },
-    { label: "Ship Car to Another State", action: () => goToSection("quote") },
+    { label: "Expedited Car Shipping", action: () => openChat("How fast can you ship my car? Tell me about expedited shipping") },
+    { label: "Cross Country Car Shipping", action: () => openChat("I need to ship my car cross country. How much does it cost?") },
+    { label: "Ship Car to Another State", action: () => openChat("How do I ship my car to another state?") },
     { label: "Classic Car Shipping", routeTo: "/enclosed-auto-transport" },
   ];
 

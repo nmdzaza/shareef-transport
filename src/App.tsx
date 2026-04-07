@@ -1,6 +1,7 @@
 import React from "react";
 import { HelmetProvider } from "react-helmet-async";
 import { HashRouter, Routes, Route } from "react-router-dom";
+import { AIChatWidget } from "./components/AIChatWidget";
 import HomePage from "./pages/HomePage";
 import BlogPage from "./pages/BlogPage";
 import TermsPage from "./pages/TermsPage";
@@ -33,6 +34,7 @@ export default function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </HashRouter>
+    <AIChatWidget />
     </HelmetProvider>
   );
 }
