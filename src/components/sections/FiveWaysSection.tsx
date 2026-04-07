@@ -52,7 +52,7 @@ export function FiveWaysSection() {
                 >
                   how to ship a car across the country
                 </a>
-                with us and book anytime via our website or at (224) 218-2949.
+                with us and book anytime via our website or at (602) 555-0100.
               </p>
             </div>
           </div>

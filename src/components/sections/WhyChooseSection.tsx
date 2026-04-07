@@ -123,7 +123,7 @@ export function WhyChooseSection() {
                       are the bedrock of car transport companies for a reason.
                       Open car transport is the perfect solution for 95% or more
                       vehicles and the most accessible. Speak with the vehicle
-                      transport team at (224) 218-2949 for help deciding which
+                      transport team at (602) 555-0100 for help deciding which
                       car transportation service suits you.
                     </p>
                   </div>

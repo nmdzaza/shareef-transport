@@ -72,8 +72,9 @@ export function ContactSection() {
           >
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex flex-col flex-1 gap-y-1">
-                <label className="text-blue-950 text-sm font-semibold">Full Name *</label>
+                <label htmlFor="contact-name" className="text-blue-950 text-sm font-semibold">Full Name *</label>
                 <input
+                  id="contact-name"
                   type="text"
                   name="name"
                   required
@@ -84,8 +85,9 @@ export function ContactSection() {
                 />
               </div>
               <div className="flex flex-col flex-1 gap-y-1">
-                <label className="text-blue-950 text-sm font-semibold">Phone *</label>
+                <label htmlFor="contact-phone" className="text-blue-950 text-sm font-semibold">Phone *</label>
                 <input
+                  id="contact-phone"
                   type="tel"
                   name="phone"
                   required
@@ -98,8 +100,9 @@ export function ContactSection() {
             </div>
 
             <div className="flex flex-col gap-y-1">
-              <label className="text-blue-950 text-sm font-semibold">Email</label>
+              <label htmlFor="contact-email" className="text-blue-950 text-sm font-semibold">Email</label>
               <input
+                id="contact-email"
                 type="email"
                 name="email"
                 value={form.email}
@@ -111,8 +114,9 @@ export function ContactSection() {
 
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex flex-col flex-1 gap-y-1">
-                <label className="text-blue-950 text-sm font-semibold">Origin ZIP *</label>
+                <label htmlFor="contact-origin" className="text-blue-950 text-sm font-semibold">Origin ZIP *</label>
                 <input
+                  id="contact-origin"
                   type="text"
                   name="originZip"
                   required
@@ -123,8 +127,9 @@ export function ContactSection() {
                 />
               </div>
               <div className="flex flex-col flex-1 gap-y-1">
-                <label className="text-blue-950 text-sm font-semibold">Destination ZIP *</label>
+                <label htmlFor="contact-dest" className="text-blue-950 text-sm font-semibold">Destination ZIP *</label>
                 <input
+                  id="contact-dest"
                   type="text"
                   name="destinationZip"
                   required
@@ -137,8 +142,9 @@ export function ContactSection() {
             </div>
 
             <div className="flex flex-col gap-y-1">
-              <label className="text-blue-950 text-sm font-semibold">Vehicle Type</label>
+              <label htmlFor="contact-vehicle" className="text-blue-950 text-sm font-semibold">Vehicle Type</label>
               <select
+                id="contact-vehicle"
                 name="vehicleType"
                 value={form.vehicleType}
                 onChange={handleChange}
@@ -156,8 +162,9 @@ export function ContactSection() {
             </div>
 
             <div className="flex flex-col gap-y-1">
-              <label className="text-blue-950 text-sm font-semibold">Message</label>
+              <label htmlFor="contact-message" className="text-blue-950 text-sm font-semibold">Message</label>
               <textarea
+                id="contact-message"
                 name="message"
                 value={form.message}
                 onChange={handleChange}
