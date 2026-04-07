@@ -849,7 +849,7 @@ function PrivacyPolicyContent() {
         </p>
         <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
           <strong className="text-slate-900 text-base font-bold box-border caret-transparent leading-6 md:text-xl md:leading-[30px]">
-            Fraud Alert: Beware of Fake Emails Pretending to Be NEXUS
+            Fraud Alert: Beware of Fake Emails Pretending to Be SHAREEF TRANSPORT
           </strong>
         </p>
         <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
@@ -878,7 +878,7 @@ function PrivacyPolicyContent() {
           </li>
         </ul>
         <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
-          NEXUS does not use Gmail accounts ( gmail.com) or third-party domains
+          SHAREEF TRANSPORT does not use Gmail accounts ( gmail.com) or third-party domains
           for official communications. We will never request payment for
           delivery processing or ownership clearance through personal emails.
         </p>

@@ -61,7 +61,7 @@ export default function TermsPage() {
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
             <strong className="text-base font-bold box-border caret-transparent leading-6 md:text-xl md:leading-[30px]">
               THESE TERMS CONTAIN PROVISIONS THAT GOVERN HOW CLAIMS CLIENT AND
-              NEXUS AUTO TRANSPORT MAY HAVE AGAINST EACH OTHER CAN BE BROUGHT.
+              SHAREEF TRANSPORT MAY HAVE AGAINST EACH OTHER CAN BE BROUGHT.
               THESE PROVISIONS WILL, WITH LIMITED EXCEPTION, REQUIRE CLIENT TO
               SUBMIT CLAIMS{" "}
             </strong>
@@ -70,7 +70,7 @@ export default function TermsPage() {
             </strong>
             <strong className="text-base font-bold box-border caret-transparent leading-6 md:text-xl md:leading-[30px]">
               {" "}
-              HAS AGAINST NEXUS AUTO TRANSPORT TO BINDING AND FINAL ARBITRATION
+              HAS AGAINST SHAREEF TRANSPORT TO BINDING AND FINAL ARBITRATION
               ON AN INDIVIDUAL BASIS, NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY
               CLASS, GROUP OR REPRESENTATIVE ACTION OR PROCEEDING. PLEASE REVIEW
               SECTION{" "}
@@ -87,7 +87,7 @@ export default function TermsPage() {
             </strong>
             <strong className="text-base font-bold box-border caret-transparent leading-6 md:text-xl md:leading-[30px]">
               {" "}
-              AGREEMENT TO ARBITRATE ANY DISPUTES WITH NEXUS AUTO TRANSPORT.
+              AGREEMENT TO ARBITRATE ANY DISPUTES WITH SHAREEF TRANSPORT.
             </strong>
           </p>
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
@@ -105,7 +105,7 @@ export default function TermsPage() {
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
             <strong className="text-base font-bold box-border caret-transparent leading-6 md:text-xl md:leading-[30px]">
               <u className="text-base box-border caret-transparent leading-6 underline md:text-xl md:leading-[30px]">
-                3. NEXUS&apos;S BROKER SERVICES
+                3. SHAREEF TRANSPORT&apos;S BROKER SERVICES
               </u>
             </strong>
           </p>
@@ -180,7 +180,7 @@ export default function TermsPage() {
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
             <strong className="text-base font-bold box-border caret-transparent leading-6 md:text-xl md:leading-[30px]">
               <u className="text-base box-border caret-transparent leading-6 underline md:text-xl md:leading-[30px]">
-                4. SUBMITTING CLIENT&apos;S ORDER FOR NEXUS&apos;S BROKER
+                4. SUBMITTING CLIENT&apos;S ORDER FOR SHAREEF TRANSPORT&apos;S BROKER
                 SERVICES
               </u>
             </strong>
@@ -373,7 +373,7 @@ export default function TermsPage() {
               ORIGINAL BILL OF LADING FOR YOUR RECORDS. BY SIGNING THE BILL OF
               LADING WITHOUT NOTATION OF DAMAGE, YOU ACKNOWLEDGE THAT YOU
               RECEIVED YOUR VEHICLE IN SATISFACTORY CONDITION AND WITHOUT DAMAGE
-              AND THEREBY RELEASE NEXUS AUTO TRANSPORT AND CARRIER OF ANY CLAIMS
+              AND THEREBY RELEASE SHAREEF TRANSPORT AND CARRIER OF ANY CLAIMS
               OR RESPONSIBILITY FOR ANY DAMAGE TO YOUR VEHICLE.
             </strong>
           </p>
@@ -516,23 +516,23 @@ export default function TermsPage() {
             </strong>
           </p>
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
-            YOUR USE OF NEXUS&apos;S BROKER SERVICES IS AT YOUR SOLE RISK.
-            NEXUS&apos;S BROKER SERVICES ARE PROVIDED ON AN &ldquo;AS IS&rdquo;
-            AND &ldquo;AS AVAILABLE&rdquo; BASIS, AND NEXUS AUTO TRANSPORT MAKES
+            YOUR USE OF SHAREEF TRANSPORT&apos;S BROKER SERVICES IS AT YOUR SOLE RISK.
+            SHAREEF TRANSPORT&apos;S BROKER SERVICES ARE PROVIDED ON AN &ldquo;AS IS&rdquo;
+            AND &ldquo;AS AVAILABLE&rdquo; BASIS, AND SHAREEF TRANSPORT MAKES
             NO WARRANTIES OF ANY KIND, EXPRESS, STATUTORY OR IMPLIED, COURSE OF
             DEALING, COURSE OF PERFORMANCE, USAGE OF TRADE OR OTHERWISE,
             INCLUDING WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF
             MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, CUSTOM,
-            TRADE, QUIET ENJOYMENT, NON-INFRINGEMENT, OR AVAILABILITY. NEXUS
-            AUTO TRANSPORT DOES NOT WARRANT THAT NEXUS&apos;S BROKER SERVICES
+            TRADE, QUIET ENJOYMENT, NON-INFRINGEMENT, OR AVAILABILITY. SHAREEF TRANSPORT
+            AUTO TRANSPORT DOES NOT WARRANT THAT SHAREEF TRANSPORT&apos;S BROKER SERVICES
             WILL BE AVAILABLE OR WILL MEET YOUR REQUIREMENTS.
           </p>
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
             SOME JURISDICTIONS MAY NOT ALLOW THE EXCLUSION OR LIMITATION OF
             IMPLIED WARRANTIES OR CONDITIONS, OR ALLOW LIMITATIONS ON HOW LONG
             AN IMPLIED WARRANTY LASTS, SO THE ABOVE LIMITATIONS OR EXCLUSIONS
-            MAY NOT APPLY TO YOU. IN SUCH EVENT, NEXUS AUTO TRANSPORT&apos;S
-            WARRANTIES AND CONDITIONS WITH RESPECT TO NEXUS&apos;S BROKER
+            MAY NOT APPLY TO YOU. IN SUCH EVENT, SHAREEF TRANSPORT&apos;S
+            WARRANTIES AND CONDITIONS WITH RESPECT TO SHAREEF TRANSPORT&apos;S BROKER
             SERVICES WILL BE LIMITED TO THE GREATEST EXTENT PERMITTED BY
             APPLICABLE LAW IN SUCH JURISDICTION.
           </p>
@@ -544,37 +544,37 @@ export default function TermsPage() {
             </strong>
           </p>
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
-            TO THE EXTENT PERMITTED BY LAW, UNDER NO CIRCUMSTANCES WILL NEXUS
+            TO THE EXTENT PERMITTED BY LAW, UNDER NO CIRCUMSTANCES WILL SHAREEF TRANSPORT
             AUTO TRANSPORT OR ITS AFFILIATES BE LIABLE TO YOU OR ANY OTHER
             PERSON OR ENTITY FOR ANY INDIRECT, INCIDENTAL, PUNITIVE, SPECIAL,
             EXEMPLARY OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE, INABILITY
-            TO USE, OR THE RESULTS OF USE OF THE NEXUS&apos;S BROKER SERVICES,
+            TO USE, OR THE RESULTS OF USE OF THE SHAREEF TRANSPORT&apos;S BROKER SERVICES,
             WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), OR
             ANY OTHER LEGAL THEORY; INCLUDING WITHOUT LIMITATION DAMAGES
             RESULTING FROM LOST PROFITS, LOSS OF BUSINESS OR BUSINESS
             INTERRUPTION, WHETHER DIRECT OR INDIRECT, ARISING OUT OF THE USE,
-            INABILITY TO USE, OR THE RESULTS OF USE OF NEXUS&apos;S BROKER
+            INABILITY TO USE, OR THE RESULTS OF USE OF SHAREEF TRANSPORT&apos;S BROKER
             SERVICES, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING
             NEGLIGENCE), OR ANY OTHER LEGAL THEORY.
           </p>
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
-            NEXUS AUTO TRANSPORT&apos;S TOTAL AGGREGATE LIABILITY TO CLIENT OR
+            SHAREEF TRANSPORT&apos;S TOTAL AGGREGATE LIABILITY TO CLIENT OR
             ANY OTHER PERSON OR ENTITY FOR ANY AND ALL CLAIMS AND DAMAGES
-            ARISING FROM OR OUT OF NEXUS&apos;S BROKER SERVICES OR THIS
+            ARISING FROM OR OUT OF SHAREEF TRANSPORT&apos;S BROKER SERVICES OR THIS
             AGREEMENT (WHETHER ARISING UNDER CONTRACT, TORT, NEGLIGENCE, STRICT
             LIABILITY OR OTHERWISE) SHALL IN NO EVENT EXCEED THE AMOUNT PAID BY
-            CLIENT TO NEXUS AUTO TRANSPORT FOR NEXUS&apos;S BROKER SERVICES.
+            CLIENT TO SHAREEF TRANSPORT FOR SHAREEF TRANSPORT&apos;S BROKER SERVICES.
           </p>
           <p className="text-slate-400 text-base box-border caret-transparent leading-6 mb-4 md:text-xl md:leading-[30px]">
-            NEXUS AUTO TRANSPORT AND THE CLIENT FURTHER HEREBY ACKNOWLEDGE THAT
-            NEXUS AUTO TRANSPORT RETAINS NO CONTROL OF ANY PART OF THE DELIVERY
-            OF THE VEHICLE UNDER THESE TERMS; THAT NEXUS AUTO TRANSPORT HAS NO
+            SHAREEF TRANSPORT AND THE CLIENT FURTHER HEREBY ACKNOWLEDGE THAT
+            SHAREEF TRANSPORT RETAINS NO CONTROL OF ANY PART OF THE DELIVERY
+            OF THE VEHICLE UNDER THESE TERMS; THAT SHAREEF TRANSPORT HAS NO
             RIGHT TO ORDER THE DELIVERY STOPPED OR RESUMED FOR SAFETY REASONS OR
             ANY OTHER REASON, NO RIGHT TO INSPECT ITS PROGRESS OF RECEIVE
             REPORTS, AND NO RIGHT TO MAKE SUGGESTIONS OR RECOMMENDATIONS
-            CONCERNING THE DELIVERY OF THE VEHICLE. FURTHERMOREE, NEXUS AUTO
+            CONCERNING THE DELIVERY OF THE VEHICLE. FURTHERMOREE, SHAREEF TRANSPORT AUTO
             TRANSPORT TAKES NO ACTIVE ROLE IN ENSURING SAFETY IN RELATION TO THE
-            DELIVERY OF THE VEHICLE, AND NEXUS AUTO TRANSPORT DOES NOT COMPLETE
+            DELIVERY OF THE VEHICLE, AND SHAREEF TRANSPORT DOES NOT COMPLETE
             ANY INSPECTION OF THE VEHICLE CARRIER USES TO COMPLETE
             CARRIER&apos;S SERVICES.
           </p>
@@ -728,7 +728,7 @@ export default function TermsPage() {
               COLLECTIVE, OR REPRESENTATIVE ACTION, NOR MAY ANY CLAIMS BE
               CONSOLIDATED OR ARBITRATED TOGETHER WITH THOSE OF OTHER CLIENTS OR
               THIRD PARTIES. ONLY INDIVIDUAL RELIEF IS AVAILABLE. NOTHING IN
-              THIS PROVISION, HOWEVER, SHOULD OPERATE TO PREVENT NEXUS AUTO
+              THIS PROVISION, HOWEVER, SHOULD OPERATE TO PREVENT SHAREEF TRANSPORT AUTO
               TRANSPORT OR LCIENT FROM SETTLING CLAIMS ON A CLASS-WIDE BASIS OR
               OTHERWISE COORDINATING CLAIMS FILED IN ARBITRATION.
             </strong>
